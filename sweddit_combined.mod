@@ -9,4 +9,4 @@ tags={
 	"New Nations"
 }
 name="Sweddit Universalis - Combined Mods"
-path="C:/Users/Sebastian/Documents/Paradox Interactive/Europa Universalis IV/mod/SwedditUniversalisMod/sweddit_combined"
+path="mod/sweddit_combined"
