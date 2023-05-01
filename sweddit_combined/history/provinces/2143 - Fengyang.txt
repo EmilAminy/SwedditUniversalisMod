@@ -1,8 +1,8 @@
 # 2143 - Fengyang
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = zhongyuan
 religion = confucianism
 capital = "Fengyang"
@@ -17,6 +17,3 @@ is_city = yes
 
 discovered_by = chinese
 discovered_by = nomad_group
-
-
-fort_15th = yes

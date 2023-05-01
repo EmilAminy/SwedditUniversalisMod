@@ -1,8 +1,8 @@
 #686 - Anqing (can't change file name)
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = jianghuai
 religion = confucianism
 capital = "Anqing"

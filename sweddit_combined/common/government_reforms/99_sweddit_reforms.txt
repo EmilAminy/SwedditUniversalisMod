@@ -1,139 +1,114 @@
-## Sweddit Chinese reforms voted in s20 ##
-
-chinese_hegemon_reform = {
-	icon = "soldiers_3"
-	allow_normal_conversion = yes
-	legacy_equivalent = feudal_monarchy
-	start_territory_to_estates = 0.5
+# Sweddit change: Permits this gov reform while vassal
+chinese_warlord = {
+	icon = "samurai"
+	allow_normal_conversion = no
 	potential = {
-		NOT = { tag = IMP }
-		culture_group = east_asian
-		religion = confucianism
-		total_development = 145
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	modifiers = {
-		land_morale = 0.05
-		ae_impact = -0.10
-		global_trade_goods_size_modifier = 0.10
-		governing_capacity = 100
-	}
-}
-
-confucian_state_reform = {
-	icon = "general_eastern_administrative"
-	allow_normal_conversion = yes
-	legacy_equivalent = feudal_monarchy
-	start_territory_to_estates = 0.5
-	potential = {
-		religion = confucianism 
-		NOT = {
+		OR = {
+			primary_culture = bai
+			primary_culture = miao
+			primary_culture = yi
+			culture_group = east_asian
+		}
+		OR = {
 			AND = {
-				total_development = 145
-				culture_group = east_asian
+				OR = {
+					primary_culture = miao
+					primary_culture = yi
+				}
+				religion = animism
+			}
+			AND = {
+				primary_culture = bai
+				religion = buddhism
+			}
+			religion = confucianism
+		}
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
 			}
 		}
 	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	modifiers = {
-		land_morale = 0.05
-		global_trade_goods_size_modifier = 0.10
-	}
-}
-
-chinese_hegemon_republic_reform = {
-	icon = "soldiers_3"
-	allow_normal_conversion = yes
-	duration = 4
-	legacy_equivalent = oligarchic_republic
-	start_territory_to_estates = 0.5
-	potential = {
-		NOT = { tag = IMP }
-		culture_group = east_asian
-		religion = confucianism
-		total_development = 145
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	modifiers = {
-		land_morale = 0.05
-		ae_impact = -0.10
-		global_trade_goods_size_modifier = 0.10
-		governing_capacity = 100
-		max_absolutism = -40
-	}
-}
-
-confucian_state_republic_reform = {
-	icon = "general_eastern_administrative"
-	allow_normal_conversion = yes
-	duration = 4
-	legacy_equivalent = oligarchic_republic
-	start_territory_to_estates = 0.5
-	potential = {
-		religion = confucianism 
-		NOT = {
+	trigger = {
+		OR = {
+			primary_culture = bai
+			primary_culture = miao
+			primary_culture = yi
+			culture_group = east_asian
+		}
+		OR = {
 			AND = {
-				total_development = 145
-				culture_group = east_asian
+				OR = {
+					primary_culture = miao
+					primary_culture = yi
+				}
+				religion = animism
+			}
+			AND = {
+				primary_culture = bai
+				religion = buddhism
+			}
+			religion = confucianism
+		}
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
 			}
 		}
 	}
+	maintain_dynasty = yes
+	allow_force_tributary = no
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	modifiers = {
-		land_morale = 0.05
-		global_trade_goods_size_modifier = 0.10
-		max_absolutism = -40
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = bai
+			primary_culture = miao
+			primary_culture = yi
+			culture_group = east_asian
+		}
+		technology_group = chinese
+		OR = {
+			AND = {
+				OR = {
+					primary_culture = miao
+					primary_culture = yi
+				}
+				religion = animism
+			}
+			AND = {
+				primary_culture = bai
+				religion = buddhism
+			}
+			religion = confucianism
+		}
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+			}
+		}
 	}
-}
-
-mandate_of_heaven_reform = {
-	icon = "celestial_empire"
-	allow_normal_conversion = yes
-	potential = {
-		tag = IMP
-		religion = confucianism
-	}
-	fixed_rank = 3
-	legacy_equivalent = tsardom_legacy
-	valid_for_nation_designer = yes
-	nation_designer_cost = 40
-
-	modifiers = {
-		land_morale = 0.10
-		yearly_army_professionalism = 0.002
-		governing_capacity = 300
-		global_trade_goods_size_modifier = 0.10
-	}
-}
-
-chinese_empire_reform = {
-	icon = "chinese_palace"
-	allow_normal_conversion = yes
-	potential = {
-		tag = IMP
-	}
-	modifiers = {
-		global_manpower_modifier = 0.20
-		land_forcelimit_modifier = 0.20
-	}
-}
-
-imperial_examination_reform = {
-	icon = "asian_scripture"
-	allow_normal_conversion = yes
-	potential = {
-		tag = IMP
-		religion = confucianism
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 40
+	fixed_rank = 2
 
 	modifiers = {
-		monarch_admin_power = 2
-		diplomatic_upkeep = -1
+		manpower_recovery_speed = 0.25
+		governing_capacity = 500
+		liberty_desire = 50
+	}
+	
+	ai = {
+		factor = 1000
+	}
+
+	custom_attributes = {
+		has_unify_china_cb = yes
 	}
 }

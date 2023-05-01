@@ -1,0 +1,245 @@
+namespace = as
+
+# Initialisation
+country_event = {
+	id = as.1
+	title = as.1.t
+	desc = as.1.d
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		always = yes
+	}
+    immediate = {
+        as_config = {
+            # Base alliance points each player receives
+            base_points = 13
+
+            # HRE Emperor cost addition (before 1470) !!! NOT WORKING !!!
+            hre_emperor_cost = 0
+
+            # Point cost per power rating
+            great_power_cost = 7
+            major_power_cost = 5
+            prominent_power_cost = 4
+            notable_power_cost = 3
+            minor_power_cost = 2
+            puny_power_cost = 1
+
+            # Each power status is a percentage of the top rating in the world
+            # If a country is above this percentage, they are considered have that power status
+            great_power_percentage = 0.9
+            major_power_percentage = 0.75
+            prominent_power_percentage = 0.55
+            notable_power_percentage = 0.35
+            minor_power_percentage = 0.15
+            puny_power_percentage = 0
+        }
+        country_event = {
+            id = as.2
+        }
+    }
+	option = {
+		name = as.1.a
+        every_country = {
+            country_event = {
+                id = as.4
+            }
+        }
+	}
+}
+
+# Global Clock (for updating ratings & costs)
+
+country_event = {
+    id = as.2
+    title = as.2.t
+    desc = as.2.d
+    picture = RELIGION_eventPicture
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        NOT = {
+			1269 = {
+				has_province_modifier = as_global_timer
+			}
+		}
+    }
+    option = {
+        name = as.2.a
+        1269 = {
+			add_province_modifier = {
+				name = as_global_timer
+				duration = 30
+			}
+		}
+
+        if = {
+            limit = {
+                NOT = {
+                    has_global_flag = clock_active
+                }
+            }
+            random_country = {
+                country_event = {
+                    id = as.3
+                }  
+            }
+        }
+    }
+}
+
+# Actual event that updates ratings & costs (triggered by global clock)
+country_event = {
+    id = as.3
+    title = as.3.t
+    desc = as.3.d
+    picture = RELIGION_eventPicture
+    is_triggered_only = yes
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        always = yes
+    }
+    immediate = {
+        set_global_flag = clock_active
+    }
+    option = {
+        name = as.3.a
+        update_ratings = yes
+        update_point_costs = yes
+        clr_global_flag = clock_active
+    }
+}
+
+# Country Clock (for checking alliances)
+country_event = {
+    id = as.4
+    title = as.4.t
+    desc = as.4.d
+    picture = RELIGION_eventPicture
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        is_player = yes
+        OR = {
+            has_country_flag = force_update_treaties
+            NOT = {
+                has_country_modifier = as_country_timer
+            }
+        }
+    }
+    option = {
+        name = as.4.a
+        add_country_modifier = {
+            name = as_country_timer
+            duration = 10
+        }
+        clr_country_flag = force_update_treaties
+        update_treaties = yes
+    }
+}
+
+# Breaking Rules
+country_event = {
+    id = as.5
+    title = as.5.t
+    desc = as.5.d
+    picture = RULEBREAK_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        is_player = yes
+    }
+    immediate = {
+        # Notify everyone else
+        if = {
+            limit = {
+                NOT = {
+                    has_country_modifier = as_notify_timer
+                }
+            }
+            add_country_modifier = {
+                name = as_notify_timer
+                duration = 90
+            }
+            every_country = {
+                limit = {
+                    NOT = {
+                        tag = ROOT
+                    }
+                    has_country_flag = as_notify
+                }
+                country_event = {
+                    id = as.6
+                }
+            }
+        }
+    }
+    option = {
+        name = as.5.a
+    }
+}
+
+# Notify
+country_event = {
+    id = as.6
+    title = as.6.t
+    desc = as.6.d
+    picture = TEMPORAL_RIFT_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        is_player = yes
+    }
+    option = {
+        name = as.6.a
+    }
+    option = {
+        name = as.6.b
+        clr_country_flag = as_notify
+        set_country_flag = as_notify_switch
+        hidden_effect = {
+            country_event = {
+                id = as.7
+            }
+        }
+    }
+}
+
+# Notify Switch
+country_event = {
+    id = as.7
+    title = as.7.t
+    desc = as.7.d
+    picture = TEMPORAL_RIFT_eventPicture
+    is_triggered_only = yes
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        always = yes
+    }
+    option = {
+        name = as.7.a
+        clr_country_flag = as_notify_switch
+    }
+}
+

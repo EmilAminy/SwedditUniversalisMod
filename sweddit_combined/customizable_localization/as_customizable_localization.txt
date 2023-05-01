@@ -1,0 +1,110 @@
+defined_text = {
+    name = TreatyType
+    random = no
+
+    text = {
+        localisation_key = as_treaty_alliance
+        trigger = {
+            has_country_flag = allied_with_@ROOT
+        }
+    }
+    text = {
+        localisation_key = as_treaty_subject
+        trigger = {
+            has_country_flag = subject_of_@ROOT
+        }
+    }
+    text = {
+        localisation_key = as_treaty_guarantee
+        trigger = {
+            has_country_flag = guaranteeing_@ROOT
+        }
+    }
+    text = {
+        localisation_key = as_treaty_support
+        trigger = {
+            has_country_flag = supporting_@ROOT
+        }
+    }
+    text = {
+        localisation_key = as_treaty_tributary
+        trigger = {
+            has_country_flag = has_tributary_@ROOT
+        }
+    }
+}
+
+defined_text = {
+    name = PowerRating
+    random = no
+
+    text = {
+        localisation_key = as_rating_great
+        trigger = {
+            check_variable = {
+                which = as_rating
+                which = as_rating_great_power
+            }
+        }
+    }
+    text = {
+        localisation_key = as_rating_major
+        trigger = {
+            check_variable = {
+                which = as_rating
+                which = as_rating_major_power
+            }
+        }
+    }
+    text = {
+        localisation_key = as_rating_prominent
+        trigger = {
+            check_variable = {
+                which = as_rating
+                which = as_rating_prom_power
+            }
+        }
+    }
+    text = {
+        localisation_key = as_rating_notable
+        trigger = {
+            check_variable = {
+                which = as_rating
+                which = as_rating_notable_power
+            }
+        }
+    }
+    text = {
+        localisation_key = as_rating_minor
+        trigger = {
+            check_variable = {
+                which = as_rating
+                which = as_rating_minor_power
+            }
+        }
+    }
+    text = {
+        localisation_key = as_rating_puny
+        trigger = {
+            always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = AsNotify
+    random = no
+
+    text = {
+        localisation_key = as_notify_enabled
+        trigger = {
+            has_country_flag = as_notify
+        }
+    }
+    text = {
+        localisation_key = as_notify_disabled
+        trigger = {
+            always = yes
+        }
+    }
+}

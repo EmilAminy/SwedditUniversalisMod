@@ -1,8 +1,8 @@
 # 2169 - Langzhong
 
-owner = CHC
-controller = CHC
-add_core = CHC
+owner = SHU
+controller = SHU
+add_core = SHU
 culture = sichuanese
 religion = confucianism
 capital = "Langzhong"

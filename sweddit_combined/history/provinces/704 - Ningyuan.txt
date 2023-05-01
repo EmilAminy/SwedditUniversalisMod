@@ -1,8 +1,8 @@
 #704 - Liaoxi
 
-owner = SHE
-controller = SHE
-add_core = SHE
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = chihan
 religion = confucianism
 capital = "Ningyuan"

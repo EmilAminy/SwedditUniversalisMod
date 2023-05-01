@@ -1,8 +1,8 @@
 # 2141 - Xuzhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = zhongyuan
 religion = confucianism
 capital = "Xuzhou"

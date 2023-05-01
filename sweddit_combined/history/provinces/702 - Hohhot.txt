@@ -1,8 +1,8 @@
 #702 - Ulanqab
 
-owner = JIN
-controller = JIN
-add_core = JIN
+owner = QIN
+controller = QIN
+add_core = QIN
 culture = mongol
 religion = vajrayana
 capital = "Hohhot"

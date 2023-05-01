@@ -1,0 +1,71 @@
+country_decisions = {
+	as_decision = {
+		potential = {
+			is_player = yes
+		}
+		allow = {
+			hidden_trigger = {
+				always = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				country_event = {
+                	id = as.3
+            	}
+				set_country_flag = force_update_treaties
+				country_event = {
+                	id = as.4
+            	}
+			}
+			custom_tooltip = as_stats_tt
+			custom_tooltip = as_treaties_tt
+
+			every_known_country = {
+				limit = {
+					in_treaty_with = { who = ROOT}
+				}
+				custom_tooltip = as_treaty_tt
+			}
+			custom_tooltip = as_ratings_tt			 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	as_notify_decision = {
+		potential = {
+			is_player = yes
+			NOT = {
+				has_country_flag = as_notify_switch
+			}
+		}
+		allow = {
+			hidden_trigger = {
+				always = yes
+			}
+		}
+		effect = {
+			custom_tooltip = as_notify_decision
+			if = {
+				limit = {
+					has_country_flag = as_notify
+				}
+				clr_country_flag = as_notify
+			}
+			else = {
+				set_country_flag = as_notify
+			}
+			set_country_flag = as_notify_switch
+			hidden_effect = {
+				country_event = {
+					id = as.7
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,8 +1,8 @@
 #685 - Huai'an (can't change file name)
 
-owner = WUU
-controller = WUU
-add_core = WUU
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = jianghuai
 religion = confucianism
 capital = "Yangzhou"

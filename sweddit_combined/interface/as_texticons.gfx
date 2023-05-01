@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_text_as_points"
+		texturefile = "gfx/interface/as_points.dds"
+	}
+    spriteType = {
+		name = "GFX_text_as_cost"
+		texturefile = "gfx/interface/as_cost.dds"
+	}
+    spriteType = {
+		name = "GFX_text_as_power_rating"
+		texturefile = "gfx/interface/as_power_rating.dds"
+	}
+    spriteType = {
+		name = "GFX_text_as_header"
+		texturefile = "gfx/interface/as_header.dds"
+	}
+	spriteType = {
+		name = "GFX_text_as_alliance"
+		texturefile = "gfx/interface/as_alliance.dds"
+	}
+    spriteType = {
+		name = "GFX_text_as_subject"
+		texturefile = "gfx/interface/as_subject.dds"
+	}
+    spriteType = {
+		name = "GFX_text_as_guarantee"
+		texturefile = "gfx/interface/as_guarantee.dds"
+	}
+    spriteType = {
+		name = "GFX_text_as_tributary"
+		texturefile = "gfx/interface/as_tributary.dds"
+	}
+	spriteType = {
+		name = "GFX_text_as_support"
+		texturefile = "gfx/interface/as_support_independence.dds"
+	}
+}

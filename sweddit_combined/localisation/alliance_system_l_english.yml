@@ -1,0 +1,46 @@
+﻿l_english:
+ as_stats_tt: "£as_header£            Stats \n\n   £icon_development_in_text£ My Rating: §Y[Root.as_rating.GetValue]§! ([Root.PowerRating])\n   £as_points£ My Available Points: §G[Root.as_points.GetValue] / [Root.as_points_max.GetValue]§! \n   £as_cost£ My Cost: §R[Root.as_cost.GetValue]§!"
+ as_treaties_tt: "£as_header£            Treaties\n"
+ as_treaty_tt: "[This.TreatyType] \n    £as_cost£ Cost: §R[This.as_cost.GetValue]§!"
+ as_ratings_tt: "£as_header£            Power Ratings\n\n   £as_power_rating£ Great: £icon_development_in_text£§Y[Root.as_rating_great_power.GetValue]-[Root.as_top_rating.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_great_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_great_power.GetValue]§!\n   £as_power_rating£ Major: £icon_development_in_text£§Y[Root.as_rating_major_power.GetValue]-[Root.as_rating_great_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_major_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_major_power.GetValue]§!\n   £as_power_rating£ Prominent: £icon_development_in_text£§Y[Root.as_rating_prom_power.GetValue]-[Root.as_rating_major_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_prom_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_prom_power.GetValue]§!\n   £as_power_rating£ Notable: £icon_development_in_text£§Y[Root.as_rating_notable_power.GetValue]-[Root.as_rating_prom_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_notable_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_notable_power.GetValue]§!\n   £as_power_rating£ Minor: £icon_development_in_text£§Y[Root.as_rating_minor_power.GetValue]-[Root.as_rating_notable_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_minor_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_minor_power.GetValue]§!\n   £as_power_rating£ Puny: £icon_development_in_text£§Y[Root.as_rating_puny_power.GetValue]-[Root.as_rating_minor_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_puny_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_puny_power.GetValue]§!"
+ 
+ as_treaty_alliance: "£as_alliance£ Alliance"
+ as_treaty_subject: "£as_subject£ Subject"
+ as_treaty_guarantee: "£as_guarantee£ Guarentee"
+ as_treaty_support: "£as_support£ Supporting Independence"
+ as_treaty_tributary: "£as_tributary£ Tributary Overlord"
+
+ as_rating_great: "£as_power_rating£ Great Power"
+ as_rating_major: "£as_power_rating£ Major Power"
+ as_rating_prominent: "£as_power_rating£ Prominent Power"
+ as_rating_notable: "£as_power_rating£ Notable Power"
+ as_rating_minor: "£as_power_rating£ Minor Power"
+ as_rating_puny: "£as_power_rating£ Puny Power"
+
+ as_check_stats: "Check Alliance Stats"
+ as_check_stats_title: "Check Alliance Stats"
+ as_check_stats_tooltip: "£as_header£            Their Stats \n\n   £icon_development_in_text£ Rating: §Y[From.as_rating.GetValue]§! ([From.PowerRating])\n   £as_points£ Available Points: §G[From.as_points.GetValue] / [From.as_points_max.GetValue]§! \n   £as_cost£ Cost: §R[From.as_cost.GetValue]§!\n£as_header£            My Stats \n\n   £icon_development_in_text£ Rating: §Y[Root.as_rating.GetValue]§! ([Root.PowerRating])\n   £as_points£ Available Points: §G[Root.as_points.GetValue] / [Root.as_points_max.GetValue]§! \n   £as_cost£ Cost: §R[Root.as_cost.GetValue]§!"
+
+ as_decision_title: "§M‡‡§! Gurkans Alliance System"
+ as_decision_desc: "The Alliance System keeps track of each players allowed alliances during gameplay.\n\nEach nation starts with X amount of alliance points based on their size. If you ally someone, their point cost will be subtracted from your available points.\n\nBreaking the rules by reaching a negative point value results in the Tengil haunting you for the rest of your days.\n\nThings to note:\n- Stats are updated automatically \n- AI nations never have points or cost points. \n- Player subjects reduce your points. This includes vassals, marches, colonies and client states. \n- Free player subjects in Age of Discovery: Sweden, Norway, Holland, Brabant, Flanders, Lithuania. \n- Treaties like guarantees and tributaries cost points for the receiving nation. \n- Colony point cost is halfed for their overlord."
+ 
+ as_notify_decision_title: "§M‡‡§! Alliance System Notifications: §M[Root.AsNotify]§!"
+ as_notify_decision_desc: "Notifies you if a certain player is breaking the alliances rules."
+ as_notify_decision: "Toggle Alliance System Notifications"
+ as_notify_enabled: "Enabled"
+ as_notify_disabled: "Disabled"
+
+ BREAKING_ALLIANCE_RULES:0 "You are breaking the alliance rules."
+ FROM_BREAKING_ALLIANCE_RULES:0 "[From.GetName] is breaking the alliance rules."
+ WOULD_BREAK_ALLIANCE_RULES:0 "You would end up breaking the alliance rules by making a treaty with this nation."
+ FROM_WOULD_BREAK_ALLIANCE_RULES:0 "This nation would end up breaking the alliance rules by making a treaty with you."
+
+ as.5.t:0 "STOP! you are breaking the alliance rules."
+ as.5.d:1 "You are breaking the alliance rules and need to break one or more treaties with other players."
+ as.5.a:0 "I'm sorry, please let the Tengil show me mercy."
+
+ as.6.t:0 "[From.GetName] is breaking the alliance rules."
+ as.6.d:1 "[From.GetName] is breaking the alliance rules and need to break one or more treaties with other players."
+ as.6.a:0 "Shame on him!"
+ as.6.b:0 "Disable notifications"
+

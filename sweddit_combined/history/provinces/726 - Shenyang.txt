@@ -1,8 +1,8 @@
 #726 - Liaodong
 
-owner = SHE
-controller = SHE
-add_core = SHE
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = manchu
 religion = confucianism
 capital = "Shenyang"

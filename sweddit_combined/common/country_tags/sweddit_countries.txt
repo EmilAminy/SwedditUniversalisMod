@@ -1,3 +1,0 @@
-#Non-Han China proper tags
-SHE = "countries/Shenyang.txt"
-IMP = "countries/Chinese_Empire.txt"

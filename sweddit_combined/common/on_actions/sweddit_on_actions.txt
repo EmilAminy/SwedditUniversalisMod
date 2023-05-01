@@ -1,4 +1,0 @@
-# Sweddit change: Gain 5 professionalism per general
-on_general_recruited = {
-	add_army_professionalism = 0.05
-}

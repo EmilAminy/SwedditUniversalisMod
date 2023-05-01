@@ -1,16 +1,3 @@
-confucian_theocracy = {
-	potential = {
-		religion = confucianism
-	}
-	trigger = {
-		religion = confucianism
-        government = theocracy
-	}
-	
-    land_morale = 0.05
-    global_trade_goods_size_modifier = 0.10
-} 
-
 rapid_collapse_of_society_2 = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -50,4 +37,26 @@ teleporting_diplomats = {
 	}
 	
 	envoy_travel_time = -1
+}
+
+fast_ship_building = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		always = yes
+	}
+	
+	global_ship_recruit_speed = -1
+}
+
+eoc_handicap = {
+	potential = {
+		is_emperor_of_china = yes
+	}
+	trigger = {
+		is_emperor_of_china = yes
+	}
+	
+	imperial_mandate = 0.1
 }

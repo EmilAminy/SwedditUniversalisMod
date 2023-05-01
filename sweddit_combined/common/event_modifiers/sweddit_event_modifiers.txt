@@ -1,5 +1,0 @@
-
-estate_cossacks_prime_herding_rights_mod = {
-    local_tax_modifier = -0.5
-    local_manpower_modifier = 0.25
-}

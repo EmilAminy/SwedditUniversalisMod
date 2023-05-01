@@ -1,0 +1,9 @@
+government = monarchy
+government_rank = 3
+add_government_reform = celestial_empire
+technology_group = chinese
+religion = confucianism
+add_harmonized_religion = mahayana
+primary_culture = jianghuai
+capital = 1816	# Beijing
+set_emperor_of_china = CZH

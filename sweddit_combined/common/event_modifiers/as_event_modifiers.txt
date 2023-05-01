@@ -1,0 +1,5 @@
+as_global_timer = {}
+
+as_country_timer = {}
+
+as_notify_timer = {}

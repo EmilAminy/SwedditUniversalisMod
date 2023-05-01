@@ -1,8 +1,8 @@
 # 2171 - Xiangyang
 
-owner = CHC
-controller = CHC
-add_core = CHC
+owner = CXI
+controller = CXI
+add_core = CXI
 culture = hubei
 religion = confucianism
 capital = "Xiangyang"

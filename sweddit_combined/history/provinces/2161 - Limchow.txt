@@ -1,8 +1,8 @@
 # 2161 - Limchow
 
-owner = YUE
-controller = YUE
-add_core = YUE
+owner = CGS
+controller = CGS
+add_core = CGS
 culture = cantonese
 religion = confucianism
 capital = "Limchow"

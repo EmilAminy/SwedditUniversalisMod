@@ -1,0 +1,25 @@
+flatten = {
+	multiply_variable = {
+		which = $float$
+		value = 0.001
+	}
+	multiply_variable = {
+		which = $float$
+		value = 1000
+	}
+}
+
+round = {
+	change_variable = {
+		which = $float$
+		value = 0.5
+	}
+	multiply_variable = {
+		which = $float$
+		value = 0.001
+	}
+	multiply_variable = {
+		which = $float$
+		value = 1000
+	}
+}

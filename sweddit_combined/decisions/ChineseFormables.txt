@@ -1,17 +1,11 @@
 country_decisions = {
-
 	form_chinese_empire = {
 		major = yes
 		potential = {
-			NOT = { exists = IMP }
 			NOT = { has_country_flag = formed_chinese_empire }
-			normal_or_historical_nations = yes
-			OR = {
-				tag = MNG
-				was_never_end_game_tag_trigger = yes
-			}
-			culture_group = east_asian
-			is_colonial_nation = no
+			NOT = { tag = CZH }
+			was_never_end_game_tag_trigger = yes
+			has_reform = chinese_warlord
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -40,10 +34,18 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			NOT = { exists = MNG }
 			stability = 3
+			if = {
+				limit = {
+					any_country = {
+						is_emperor_of_china = yes
+					}
+				}
+				is_emperor_of_china = yes
+			}
 			is_free_or_tributary_trigger = yes
-			culture_group = east_asian
+			has_reform = chinese_warlord
 			is_at_war = no
 			AND = {
 				owns_core_province = 1816 #Beijing
@@ -74,79 +76,34 @@ country_decisions = {
 			}
 		}
 		effect = {
-			1821 = {
+			change_tag = MNG
+			dismantle_empire_of_china = no
+			clr_global_flag = empire_of_china_dismantled
+			set_emperor_of_china = ROOT
+			add_prestige = 25
+			set_government_rank = 3
+			change_government = monarchy
+			add_government_reform = celestial_empire
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			set_country_flag = formed_chinese_empire
+			add_mandate = 100
+			add_meritocracy = 100
+			1816 = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
 				move_capital_effect = yes
 			}
-			change_tag = IMP
-			remove_non_electors_emperors_from_empire_effect = yes
 			china_superregion = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = IMP
+				add_permanent_claim = ROOT
 			}
-			add_prestige = 25
-			set_government_rank = 3
-			change_government = monarchy
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			if = {
-				limit = { religion = confucianism }
-				add_government_reform = mandate_of_heaven_reform
-				add_government_reform = imperial_examination_reform
-			}
-			set_country_flag = formed_chinese_empire
-			add_government_reform = chinese_empire_reform
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 400
-	}
-
-	adopt_confucian_administration = {
-		major = yes
-		potential = {
-			religion = confucianism
-			NOT = { 
-				OR = {
-					has_reform = confucian_state_reform
-					has_reform = chinese_hegemon_reform
-					has_reform = mandate_of_heaven_reform
-					has_reform = chinese_hegemon_republic_reform
-					has_reform = confucian_state_republic_reform
-				}
-			}
-		}
-		allow = {
-			stability = 1
-			is_at_war = no	
-			harmony = 75
-		}
-		effect = {
-			if = {
-				limit = {
-					OR = {
-						government = monarchy
-					}
-				}
-				add_government_reform = confucian_state_reform
-			}
-			if = {
-				limit = {
-					government = republic
-				}
-				add_government_reform = confucian_state_republic_reform
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 100
 	}
 }

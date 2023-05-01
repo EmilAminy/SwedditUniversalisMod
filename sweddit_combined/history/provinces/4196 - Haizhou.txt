@@ -1,8 +1,8 @@
 #4196 - Haizhou
 
-owner = QIC
-controller = QIC
-add_core = QIC
+owner = CZH
+controller = CZH
+add_core = CZH
 culture = jianghuai
 religion = confucianism
 capital = "Haizhou"

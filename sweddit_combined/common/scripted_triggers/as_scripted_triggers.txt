@@ -1,0 +1,163 @@
+is_player = {
+    ai = no
+}
+
+is_player_allied_with_player = {
+    is_player = yes
+    alliance_with = $who$
+    $who$ = {
+        is_player = yes
+    }
+}
+
+is_player_subject_of_player = {
+    $who$ = {
+        is_player = yes
+    }
+    is_player = yes
+    is_subject_of = $who$
+    NOT = {
+        is_subject_of_type = tributary_state
+    }
+}
+
+is_free_player_subject_of_player = {
+    is_player_subject_of_player = { who = $who$ }
+    current_age = age_of_discovery
+    OR = {
+        tag = SWE
+        tag = NOR
+        tag = HOL
+        tag = FLA
+        tag = BRB
+        tag = LIT
+    }
+}
+
+is_player_with_player_tributary = {
+    is_player = yes
+    $who$ = {
+        is_player = yes
+        is_subject_of = PREV
+        is_subject_of_type = tributary_state
+    }
+}
+
+is_player_guaranteeing_player = {
+    is_player = yes
+    $who$ = {
+        is_player = yes
+        guaranteed_by = PREV
+    }
+}
+
+is_player_supporting_player = {
+    is_player = yes
+    is_supporting_independence_of = $who$
+    $who$ = {
+        is_player = yes
+    }
+}
+
+in_treaty_with = {
+    OR = {
+        has_country_flag = allied_with_@$who$
+        has_country_flag = subject_of_@$who$
+        has_country_flag = has_tributary_@$who$
+        has_country_flag = guaranteeing_@$who$
+        has_country_flag = supporting_@$who$
+    }
+}
+
+would_break_rules = {
+    is_player = yes
+    $compare$ = {
+        is_player = yes
+    }
+    OR = {
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 1 } }
+            NOT = { check_variable = { which = as_points value = 1 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 2 } }
+            NOT = { check_variable = { which = as_points value = 2 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 3 } }
+            NOT = { check_variable = { which = as_points value = 3 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 4 } }
+            NOT = { check_variable = { which = as_points value = 4 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 5 } }
+            NOT = { check_variable = { which = as_points value = 5 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 6 } }
+            NOT = { check_variable = { which = as_points value = 6 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 7 } }
+            NOT = { check_variable = { which = as_points value = 7 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 8 } }
+            NOT = { check_variable = { which = as_points value = 8 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 9 } }
+            NOT = { check_variable = { which = as_points value = 9 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 10 } }
+            NOT = { check_variable = { which = as_points value = 10 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 11 } }
+            NOT = { check_variable = { which = as_points value = 11 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 12 } }
+            NOT = { check_variable = { which = as_points value = 12 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 13 } }
+            NOT = { check_variable = { which = as_points value = 13 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 14 } }
+            NOT = { check_variable = { which = as_points value = 14 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 15 } }
+            NOT = { check_variable = { which = as_points value = 15 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 16 } }
+            NOT = { check_variable = { which = as_points value = 16 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 17 } }
+            NOT = { check_variable = { which = as_points value = 17 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 18 } }
+            NOT = { check_variable = { which = as_points value = 18 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 19 } }
+            NOT = { check_variable = { which = as_points value = 19 } } 
+        }
+        AND = {
+            $compare$ = { is_variable_equal = { which = as_cost value = 20 } }
+            NOT = { check_variable = { which = as_points value = 20 } } 
+        }
+    }
+}
+
+forbidden_tags = {
+    tag = CZH
+}

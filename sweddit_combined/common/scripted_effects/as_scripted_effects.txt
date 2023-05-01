@@ -1,0 +1,542 @@
+as_config = {
+	every_country = {
+		set_variable = {
+			which = as_points_base
+			value = $base_points$
+		}
+		set_variable = {
+			which = as_cost_emperor
+			value = $hre_emperor_cost$
+		}
+
+		set_variable = {
+			which = as_cost_great_power
+			value = $great_power_cost$
+		}
+		set_variable = {
+			which = as_cost_major_power
+			value = $major_power_cost$
+		}
+		set_variable = {
+			which = as_cost_prom_power
+			value = $prominent_power_cost$
+		}
+		set_variable = {
+			which = as_cost_notable_power
+			value = $notable_power_cost$
+		}
+		set_variable = {
+			which = as_cost_minor_power
+			value = $minor_power_cost$
+		}
+		set_variable = {
+			which = as_cost_puny_power
+			value = $puny_power_cost$
+		}
+
+		set_variable = {
+			which = as_percentage_great_power
+			value = $great_power_percentage$
+		}
+		set_variable = {
+			which = as_percentage_major_power
+			value = $major_power_percentage$
+		}
+		set_variable = {
+			which = as_percentage_prom_power
+			value = $prominent_power_percentage$
+		}
+		set_variable = {
+			which = as_percentage_notable_power
+			value = $notable_power_percentage$
+		}
+		set_variable = {
+			which = as_percentage_minor_power
+			value = $minor_power_percentage$
+		}
+		set_variable = {
+			which = as_percentage_puny_power
+			value = $puny_power_percentage$
+		}
+
+		set_variable = {
+			which = as_points_max_great_power
+			which = as_points_base
+		}
+		subtract_variable = {
+			which = as_points_max_great_power
+			which = as_cost_great_power
+		}
+
+		set_variable = {
+			which = as_points_max_major_power
+			which = as_points_base
+		}
+		subtract_variable = {
+			which = as_points_max_major_power
+			which = as_cost_major_power
+		}
+
+		set_variable = {
+			which = as_points_max_prom_power
+			which = as_points_base
+		}
+		subtract_variable = {
+			which = as_points_max_prom_power
+			which = as_cost_prom_power
+		}
+
+		set_variable = {
+			which = as_points_max_notable_power
+			which = as_points_base
+		}
+		subtract_variable = {
+			which = as_points_max_notable_power
+			which = as_cost_notable_power
+		}
+
+		set_variable = {
+			which = as_points_max_minor_power
+			which = as_points_base
+		}
+		subtract_variable = {
+			which = as_points_max_minor_power
+			which = as_cost_minor_power
+		}
+
+		set_variable = {
+			which = as_points_max_puny_power
+			which = as_points_base
+		}
+		subtract_variable = {
+			which = as_points_max_puny_power
+			which = as_cost_puny_power
+		}
+	}
+}
+
+update_ratings = {
+	every_country = {
+		limit = {
+			NOT = {
+				forbidden_tags = yes
+			}
+		}
+		export_to_variable = {
+			which = as_rating
+			value = total_development
+		}
+
+		every_subject_country = {
+			limit = {
+				NOT = {
+					is_subject_of_type = tributary_state
+				}
+			}
+			export_to_variable = {
+				which = as_rating
+				value = total_development
+			}
+			set_variable = {
+				which = as_rating_temp
+				which = as_rating
+			}
+			divide_variable = {
+				which = as_rating_temp
+				value = 2
+			}
+			overlord = {
+				set_variable = {
+					which = as_rating_temp
+					which = PREV
+				}
+				change_variable = {
+					which = as_rating
+					which = as_rating_temp
+				}
+			}
+		}
+
+		flatten = {
+			float = as_rating
+		}
+	}
+	update_power_ratings = yes
+}
+
+find_top_power = {
+    save_event_target_as = possible_top_power
+    
+    every_country = {
+        limit = {
+            any_great_power = {
+                tag = PREV
+                check_variable = {
+                    which = as_rating
+                    which = event_target:possible_top_power
+                }
+            }
+        }
+        save_event_target_as = possible_top_power
+    }
+
+    event_target:possible_top_power = {
+        save_global_event_target_as = top_power
+    }
+}
+
+update_power_ratings = {
+	find_top_power = yes
+	event_target:top_power = {
+		set_variable = {
+			which = as_top_rating
+			which = as_rating
+		}
+	}
+	every_country = {
+		limit = {
+			is_player = yes
+		}
+		set_variable = {
+			which = as_top_rating
+			which = event_target:top_power
+		}
+
+		set_variable = {
+			which = as_rating_great_power
+			which = as_top_rating
+		}
+		set_variable = {
+			which = as_rating_major_power
+			which = as_top_rating
+		}
+		set_variable = {
+			which = as_rating_prom_power
+			which = as_top_rating
+		}
+		set_variable = {
+			which = as_rating_notable_power
+			which = as_top_rating
+		}
+		set_variable = {
+			which = as_rating_minor_power
+			which = as_top_rating
+		}
+		set_variable = {
+			which = as_rating_puny_power
+			which = as_top_rating
+		}
+
+		multiply_variable = {
+			which = as_rating_great_power
+			which = as_percentage_great_power
+		}
+		multiply_variable = {
+			which = as_rating_major_power
+			which = as_percentage_major_power
+		}
+		multiply_variable = {
+			which = as_rating_prom_power
+			which = as_percentage_prom_power
+		}
+		multiply_variable = {
+			which = as_rating_notable_power
+			which = as_percentage_notable_power
+		}
+		multiply_variable = {
+			which = as_rating_minor_power
+			which = as_percentage_minor_power
+		}
+		multiply_variable = {
+			which = as_rating_puny_power
+			which = as_percentage_puny_power
+		}
+
+		flatten = {
+			float = as_rating_great_power
+		}
+		flatten = {
+			float = as_rating_major_power
+		}
+		flatten = {
+			float = as_rating_prom_power
+		}
+		flatten = {
+			float = as_rating_notable_power
+		}
+		flatten = {
+			float = as_rating_minor_power
+		}
+		flatten = {
+			float = as_rating_puny_power
+		}
+	}
+}
+
+update_point_costs = {
+	every_country = {
+		limit = {
+			is_player = yes
+		}
+
+		set_variable = {
+			which = as_cost
+			value = 0
+		}
+
+		if = {
+			limit = {
+				check_variable = {
+					which = as_rating
+					which = as_rating_great_power
+				}
+			}
+			change_variable = {
+				which = as_cost
+				which = as_cost_great_power
+			}
+			set_variable = {
+				which = as_points_max
+				which = as_points_max_great_power
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = as_rating
+					which = as_rating_major_power
+				}
+			}
+			change_variable = {
+				which = as_cost
+				which = as_cost_major_power
+			}
+			set_variable = {
+				which = as_points_max
+				which = as_points_max_major_power
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = as_rating
+					which = as_rating_prom_power
+				}
+			}
+			change_variable = {
+				which = as_cost
+				which = as_cost_prom_power
+			}
+			set_variable = {
+				which = as_points_max
+				which = as_points_max_prom_power
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = as_rating
+					which = as_rating_notable_power
+				}
+			}
+			change_variable = {
+				which = as_cost
+				which = as_cost_notable_power
+			}
+			set_variable = {
+				which = as_points_max
+				which = as_points_max_notable_power
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = as_rating
+					which = as_rating_minor_power
+				}
+			}
+			change_variable = {
+				which = as_cost
+				which = as_cost_minor_power
+			}
+			set_variable = {
+				which = as_points_max
+				which = as_points_max_minor_power
+			}
+		} 
+		else = {
+			change_variable = {
+				which = as_cost
+				which = as_cost_puny_power
+			}
+			set_variable = {
+				which = as_points_max
+				which = as_points_max_puny_power
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					is_subject_of_type = colony
+					is_subject_of_type = crown_colony
+					is_subject_of_type = private_enterprise
+					is_subject_of_type = self_governing_colony
+				}
+			}
+			divide_variable = {
+				which = as_cost
+				value = 2
+			}
+			round = {
+				float = as_cost
+			}
+		}
+
+		# if = {
+		# 	limit = {
+		# 		is_emperor = yes
+		# 		NOT = {
+		# 			is_year = 1470
+		# 		}
+		# 	}
+		# 	change_variable = {
+		# 		which = as_cost
+		# 		value = as_cost_emperor
+		# 	}
+		# }
+	}
+}
+
+update_treaties = {
+	if = {
+		limit = {
+			is_player = yes
+		}
+
+		set_variable = {
+			which = as_points
+			which = as_points_max
+		}
+
+		every_known_country = {
+			limit = {
+				OR = {
+					has_country_flag = allied_with_@ROOT
+					has_country_flag = free_subject_of_@ROOT
+					has_country_flag = subject_of_@ROOT
+					has_country_flag = has_tributary_@ROOT
+					has_country_flag = guaranteeing_@ROOT
+					has_country_flag = supporting_@ROOT
+				}
+			}
+			clr_country_flag = allied_with_@ROOT
+			clr_country_flag = free_subject_of_@ROOT
+			clr_country_flag = subject_of_@ROOT
+			clr_country_flag = has_tributary_@ROOT
+			clr_country_flag = guaranteeing_@ROOT
+			clr_country_flag = supporting_@ROOT
+		}
+
+		every_known_country = {
+			limit = {
+				OR = {
+					is_player_allied_with_player = { who = ROOT }
+					is_player_subject_of_player = { who = ROOT }
+					is_player_with_player_tributary = { who = ROOT }
+					is_player_guaranteeing_player = { who = ROOT }
+					is_player_supporting_player = { who = ROOT }
+				}
+			}
+
+			if = {
+				limit = {
+					is_free_player_subject_of_player = { who = ROOT }
+				}
+				set_country_flag = free_subject_of_@ROOT
+			}
+			else_if = {
+				limit = {
+					is_player_allied_with_player = { who = ROOT }
+				}
+				set_country_flag = allied_with_@ROOT
+				subtract_points = { from = ROOT }
+			}
+			else_if = {
+				limit = {
+					is_player_subject_of_player = { who = ROOT }
+				}
+				set_country_flag = subject_of_@ROOT
+				subtract_points = { from = ROOT }
+				
+			}
+			else_if = {
+				limit = {
+					is_player_with_player_tributary = { who = ROOT }
+				}
+				set_country_flag = has_tributary_@ROOT
+				subtract_points = { from = ROOT }
+			}
+			else_if = {
+				limit = {
+					is_player_guaranteeing_player = { who = ROOT }
+				}
+				set_country_flag = guaranteeing_@ROOT
+				subtract_points = { from = ROOT }
+			}
+			else_if = {
+				limit = {
+					is_player_supporting_player = { who = ROOT }
+				}
+				set_country_flag = supporting_@ROOT
+				subtract_points = { from = ROOT }
+			}
+		}
+
+		check_rulebreak = yes
+	}
+}
+
+subtract_points = {
+	set_variable = {
+		which = as_subtract
+		which = as_cost
+	}
+	$from$ = {
+		set_variable = {
+			which = as_subtract
+			which = as_points
+		}
+		subtract_variable = {
+			which = as_subtract
+			which = PREV
+		}
+		set_variable = {
+			which = as_points
+			which = as_subtract
+		}
+	}
+}
+
+check_rulebreak = {
+	if = {
+		limit  = {
+			is_player = yes
+			NOT = {
+				check_variable = {
+					which = as_points
+					value = 0
+				}
+			}
+		}
+		set_country_flag = breaking_rules
+		country_event = {
+			id = as.5
+		}
+	}
+	else = {
+		clr_country_flag = breaking_rules
+	}
+}
+
+

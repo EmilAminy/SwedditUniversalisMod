@@ -1,0 +1,151 @@
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CSH
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = QIN
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = JIN
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = YAN
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = QIC
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = LNG
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = TNG
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CXI
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = SHU
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CHC
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = WUU
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = MIN
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = NNG
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = HUA
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CMI
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CYI
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CDL
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = CGS
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}
+
+dependency = {
+    subject_type = daimyo_vassal
+    first = CZH
+    second = YUE
+    start_date = 1444.1.1
+    end_date = 1450.1.1
+}

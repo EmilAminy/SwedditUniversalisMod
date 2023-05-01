@@ -6,7 +6,6 @@ horde_unity = {
 	nomadic_tribes_loyalty_modifier = 0.05
 }
 
-# Drilling armies now gives 5% army professionalism per year
-drilling_armies = {
-	yearly_army_professionalism = 0.05
+
+vassal_nation = {
 }

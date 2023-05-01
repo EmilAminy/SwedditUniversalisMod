@@ -10,3 +10,12 @@
 # Rename Scandinavia to Sweden
  restore_sweden_sweddit_title:0 "Restore Sweden"
  restore_sweden_sweddit_desc:0 "Scandinavia is a silly name after all"
+# Form Chinese empire
+ form_chinese_empire_title:0 "Form Chinese Empire"
+ form_chinese_empire_desc:0 "Proclaim the Chinese Empire!"
+# Mandate handicap for MP
+ eoc_handicap:0 "China will grow larger"
+ desc_eoc_handicap:0 "Bing chilling\n-Zhong Xina, 2021"
+# Faster ship building
+ fast_ship_building:0 "Faster ship construction"
+ desc_fast_ship_building:0 "Hahaha, dockyards go brrrr"
