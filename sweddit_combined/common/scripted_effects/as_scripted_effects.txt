@@ -167,6 +167,10 @@ find_top_power = {
     
     every_country = {
         limit = {
+			NOT = {
+				ming_unleashed = yes
+				tag = MNG
+			}
             any_great_power = {
                 tag = PREV
                 check_variable = {

@@ -61,6 +61,11 @@ country_event = {
                 }
             }
             random_country = {
+                limit = {
+                    NOT = {
+                        tag = MNG
+                    }
+                }
                 country_event = {
                     id = as.3
                 }  

@@ -7,12 +7,6 @@
 # No diplomat travel time
  teleporting_diplomats:0 "Teleports behind you"
  desc_teleporting_diplomats:0 "Heh, nothing personnel kid"
-# Form Chinese empire
- form_chinese_empire_title:0 "Form Chinese Empire"
- form_chinese_empire_desc:0 "Proclaim the Chinese Empire!"
-# Mandate handicap for MP
- eoc_handicap:0 "China will grow larger"
- desc_eoc_handicap:0 "Bing chilling\n-Zhong Xina, 2021"
 # Australia trade company
  TRADE_COMPANY_AUSTRALIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Australian Company"
  TRADE_COMPANY_AUSTRALIA_Oceania_Trade_Company:0 "Australian Company"

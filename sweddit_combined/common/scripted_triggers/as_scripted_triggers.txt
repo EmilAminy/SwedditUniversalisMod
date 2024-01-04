@@ -76,6 +76,10 @@ would_break_rules = {
     }
     OR = {
         AND = {
+            tag = MNG
+            NOT = { ming_unleashed = yes }
+        }
+        AND = {
             $compare$ = { is_variable_equal = { which = as_cost value = 1 } }
             NOT = { check_variable = { which = as_points value = 1 } } 
         }
@@ -180,4 +184,8 @@ global_flag_timer = {
             days = $days$
         }
     }
+}
+
+ming_unleashed = {
+    year = 1500
 }

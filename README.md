@@ -1,18 +1,5 @@
 # Sweddit Universalis changelog
 
-## Mingsplosion
-
-#### Decisions
-- Added **form Empire of China** decision which forms **Ming** and restores the **Mandate of Heaven** if it has been disbanded
-
-#### History
-- **Ming** broken up into multiple tributary nations, many with **unique national ideas**
-
-#### Mandate of heaven
-- The **Chinese emperor** always get **+0.1 mandate growth**
-- Reduced **Mandate loss** from **devastation** from 10 per 100 devastated development to 0.5
-- Removed military maluses from **low mandate** and added **+50% stability cost**
-
 ## Alliance mod
 - Custom system which keeps track of player-player alliances
 

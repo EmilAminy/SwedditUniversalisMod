@@ -39,17 +39,6 @@ teleporting_diplomats = {
 	envoy_travel_time = -1
 }
 
-eoc_handicap = {
-	potential = {
-		is_emperor_of_china = yes
-	}
-	trigger = {
-		is_emperor_of_china = yes
-	}
-	
-	imperial_mandate = 0.1
-}
-
 sweddit_reichskrieger = {
 	potential = {
 		hre_reform_passed = emperor_reichskrieg

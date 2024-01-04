@@ -10,15 +10,6 @@ horde_unity = {
 vassal_nation = {
 }
 
-# Less brutal maluses for low mandate
-negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mandate
-	meritocracy = -2
-	reduced_liberty_desire = -30
-	global_trade_goods_size_modifier = -0.5
-	global_unrest = 5
-	stability_cost_modifier = 0.5
-}
-
 # Full core gives dev cost reduction
 core = {
 	local_tax_modifier = 0.75				#90% more in a core
