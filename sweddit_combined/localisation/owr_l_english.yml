@@ -1,0 +1,7 @@
+﻿l_english: 
+ trade_company_carribean:0 "Carribean Charter"
+ TRADE_COMPANY_CARRIBEAN_Root_Culture_GetName:0 "[Root.GetAdjective] Carribean Company"
+ TRADE_COMPANY_CARRIBEAN_Trade_Company:0 "Carribean Trade Company"
+ trade_company_australia:0 "Australian Charter"
+ TRADE_COMPANY_AUSTRALIA_Root_Culture_GetName:0 "[Root.GetAdjective] Australian Company"
+ TRADE_COMPANY_AUSTRALIA_Trade_Company:0 "Australian Trade Company"

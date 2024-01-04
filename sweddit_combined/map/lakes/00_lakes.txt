@@ -1,0 +1,13 @@
+#Siling Lake
+lake = {
+	triangle_strip = { 1859 1170 1864 1187 1882 1165 1887 1182 }
+	height = 43
+	#height = 3
+}
+
+#Qinghai Lake
+lake = {
+	triangle_strip = { 2050 1262 2053 1281 2067 1256 2069 1280 2081 1255 2084 1271 }
+	height = 33
+	#height = 3
+}

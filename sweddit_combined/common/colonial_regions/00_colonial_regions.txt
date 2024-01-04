@@ -833,9 +833,7 @@ colonial_the_carribean = {
 	}
 
 	provinces = {
-		482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 1881
-		2654 2655 2656 2658 2659
-		4624 4622 4623 4619 4618 4620 4621
+		0
 	}
 
 	# Specific
@@ -1240,16 +1238,64 @@ colonial_brazil = {
 	}
 }
 
-# Sweddit change: Removed Australia as colonial region
+
 # Australia
 colonial_australia = {
 	color = { 126 20 20 }
 
 	provinces = {
-		2025
+		0
 	}
 
 	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Australia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Tierra_Austral"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Terre_Australe"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_New_Holland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = KOR
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Hoju"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_AUSTRALIA_Root_Culture_GetName_Australia"

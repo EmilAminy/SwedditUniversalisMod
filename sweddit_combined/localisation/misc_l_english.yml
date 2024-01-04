@@ -7,10 +7,6 @@
 # No diplomat travel time
  teleporting_diplomats:0 "Teleports behind you"
  desc_teleporting_diplomats:0 "Heh, nothing personnel kid"
-# Australia trade company
- TRADE_COMPANY_AUSTRALIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Australian Company"
- TRADE_COMPANY_AUSTRALIA_Oceania_Trade_Company:0 "Australian Company"
- trade_company_australia:0 "Australian Charter"
 # Reichskrieg CB
  sweddit_reichskrieger:0 "Reichskrieg"
  sweddit_reichskrieg_target:0 "Reichskrieg Target"
