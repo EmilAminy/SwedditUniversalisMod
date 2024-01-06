@@ -167,11 +167,8 @@ find_top_power = {
     
     every_country = {
         limit = {
-			NOT = {
-				ming_unleashed = yes
-				tag = MNG
-			}
             any_great_power = {
+				NOT = { has_country_flag = no_alliances } # Fuck Ming
                 tag = PREV
                 check_variable = {
                     which = as_rating

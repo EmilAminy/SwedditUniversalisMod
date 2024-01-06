@@ -13,6 +13,13 @@ country_event = {
 		always = yes
 	}
     immediate = {
+        # Fuck Ming
+        MNG = {
+            country_event = {
+                id = as.9
+            }
+        }
+        
         # Config setup
         every_country = {
             country_event = {
@@ -63,7 +70,7 @@ country_event = {
             random_country = {
                 limit = {
                     NOT = {
-                        tag = MNG
+                        has_country_flag = no_alliances
                     }
                 }
                 country_event = {
@@ -248,5 +255,36 @@ country_event = {
     }
     option = {
         name = as.8.a
+    }
+}
+
+# Fuck Ming
+country_event = {
+    id = as.9
+    title = as.9.t
+    desc = as.9.d
+    picture = TEMPORAL_RIFT_eventPicture
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        tag = MNG
+    }
+    option = {
+        name = as.9.a
+
+        if = {
+            limit = {
+                NOT = {
+                    is_year = 1500
+                }
+            }
+            set_country_flag = no_alliances
+        } 
+        
+        else = {
+            clr_country_flag = no_alliances
+        }
     }
 }
