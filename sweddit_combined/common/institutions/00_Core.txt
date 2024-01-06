@@ -630,8 +630,16 @@ new_world_i = {
 		is_institution_enabled = renaissance
 		owner = { 
 			has_any_exploration_idea = yes
-			any_owned_province = {
-				continent = north_america
+			OR = {
+				any_owned_province = {
+					continent = north_america
+				}
+				AND = {
+					africa = { has_discovered = PREV }
+					asia = { has_discovered = PREV }
+					europe = { has_discovered = PREV }
+					north_america = { has_discovered = PREV }
+				}
 			}
 		}
 	}
