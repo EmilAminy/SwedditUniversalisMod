@@ -22,6 +22,9 @@
 #### Decisions
 - Countries that have **at any point** been the **Timurid** tag may no longer form **Persia**
 
+#### Estate privileges
+- Amount of **discipline** gained from **Qizilbash estate** privilege **Regimental Discipline** reduced from **5%** to **2.5%**
+
 #### Defender of Faith
 - Made **DoF** available to all religions
 - Reversed the levels of **DoF**, fewer followers of religion = stronger **DoF**
