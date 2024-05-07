@@ -36,7 +36,7 @@ estate_qizilbash_regimental_discipline = {
 	influence_scaled_conditional_modifier = {
 		trigger = {
 			estate_loyalty = { estate = estate_qizilbash loyalty = 30 }
-			NOT = { estate_loyalty = { estate = estate_qizilbash loyalty = 100 } }
+			NOT = { estate_influence = { estate = estate_qizilbash influence = 100 } }
 		}
 		modifier = {
 			discipline = 0.025
