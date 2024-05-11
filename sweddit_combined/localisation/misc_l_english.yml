@@ -1,9 +1,6 @@
 ﻿l_english:
 # Age bonus change
  ab_no_distance_for_core:0 "100% more supply limit"
-# Rapid collapse of society change
- rapid_collapse_of_society_2:0 "Rapid Collapse of Society 2"
- desc_rapid_collapse_of_society_2:0 "Sike"
 # No diplomat travel time
  teleporting_diplomats:0 "Teleports behind you"
  desc_teleporting_diplomats:0 "Heh, nothing personnel kid"

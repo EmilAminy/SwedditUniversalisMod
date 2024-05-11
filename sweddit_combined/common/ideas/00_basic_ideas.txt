@@ -163,7 +163,8 @@ horde_gov_ideas = {
 	}
 	
 	horse_lords = {
-		cavalry_cost = -0.33
+		# Sweddit change: Added 2% cavalry cost so that it is divisible by 5 and works better with the cav cost cap.
+		cavalry_cost = -0.35
 		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {
@@ -703,6 +704,35 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		garrison_size = 0.33
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = ned_buffed_forts_flag
+					}
+					every_owned_province = {
+						limit = {
+							region = low_countries_region
+							has_fort_building_trigger = yes
+						}
+						remove_province_modifier = ned_low_countries_fort_buff
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff_buffed
+							duration = -1
+							hidden = yes
+						}
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
+					remove_province_modifier = ned_low_countries_fort_buff_buffed
+				}
+			}
+		}
 	}
 
 	#until_the_last_man = {
@@ -1741,6 +1771,7 @@ court_ideas = {
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
 		imperial_authority = 0.05
+		monthly_cultural_unity = 0.5
 	}
 	
 	long_echo = {
