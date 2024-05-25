@@ -74,8 +74,8 @@ would_break_rules = {
     $compare$ = {
         is_player = yes
     }
-    has_country_flag = no_alliances # Fuck Ming
     OR = {
+        has_country_flag = no_alliances # Fuck Ming
         AND = {
             $compare$ = { is_variable_equal = { which = as_cost value = 1 } }
             NOT = { check_variable = { which = as_points value = 1 } } 

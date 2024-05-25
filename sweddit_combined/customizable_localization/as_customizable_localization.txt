@@ -38,6 +38,16 @@ defined_text = {
     name = PowerRating
     random = no
 
+
+    text = {
+        localisation_key = as_rating_colossal
+        trigger = {
+            check_variable = {
+                which = as_rating
+                which = as_rating_colossal_power
+            }
+        }
+    }
     text = {
         localisation_key = as_rating_great
         trigger = {

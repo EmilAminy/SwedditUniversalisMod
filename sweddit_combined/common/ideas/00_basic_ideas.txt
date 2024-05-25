@@ -163,8 +163,8 @@ horde_gov_ideas = {
 	}
 	
 	horse_lords = {
-		# Sweddit change: Added 2% cavalry cost so that it is divisible by 5 and works better with the cav cost cap.
-		cavalry_cost = -0.35
+		# Sweddit change: Removed 3% cavalry cost so that it is divisible by 5 and works better with the cav cost cap.
+		cavalry_cost = -0.30
 		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {

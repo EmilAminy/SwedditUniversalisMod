@@ -1,3 +1,4 @@
+# Sweddit change: Reduced mercenary discipline and mercenary manpower
 hessian_militarization_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 11
@@ -21,7 +22,7 @@ hessian_militarization_mechanic = {
 			scaled_modifier = {
 				trigger = { has_country_flag = ven_condottieri_flag }
 				modifier = {
-					merc_leader_army_tradition = 0.5
+					assault_fort_cost_modifier = -0.5
 				}		
 			}
 			reverse_scaled_modifier = {

@@ -14,7 +14,7 @@
 - Removed opinion requirement for forming alliance
 
 #### Cavalry
-- Changed the cap for **cavalry cost modifiers** from **-80%** to **-30%**
+- **Cavalry cost modifiers** beyond **-30%** are are **halved**
 
 #### Colonial Regions
 - Removed Australia as a **colonial region**, it is now a **trade charter**
@@ -24,10 +24,14 @@
 
 #### Estate privileges
 - Amount of **discipline** gained from **Qizilbash estate** privilege **Regimental Discipline** reduced from **5%** to **2.5%**
+- **Prime Herding Rights** privilege removed from **Cossack estate**
 
 #### Defender of Faith
 - Made **DoF** available to all religions
 - Reversed the levels of **DoF**, fewer followers of religion = stronger **DoF**
+
+#### Disasters
+- Crisis of the Ming Dynasty can trigger in age of exploration
 
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
@@ -36,8 +40,9 @@
 - Forts maintenance starts becoming more expensive if you exceed 1 fort per 50 development
 
 #### Government reforms
-- Parliament issues **Draft** and **Emergency impressment act** now give half the amount of manpower/sailors
+- Parliament issues **Draft** and **Emergency impressment act** removed
 - **Mercenary mobilization** nerfed to give **5% mercenary discipline** and **15% mercenary manpower**
+- **Russian Empire** no longer gives **-10% development cost**
 
 #### Ideas
 - **Maritime ideas** changed, replaced **Ship repair in coastal sea zone** with **+1 admiral maneuver**
@@ -51,6 +56,7 @@
 
 #### Mandate of Heavean
 - **Loans** no longer cause **loss of mandate**
+- **Devastation** only gives **-0.5 yearly mandate** for every **100 development devastated**
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
@@ -69,7 +75,6 @@
 
 ####  Triggered Modifiers
 - All countries get **-100% envoy travel time**
-- The **Rapid Collapse of Society** modifier has been removed
 - A **protestant or reformed** HRE will give the **reformed empire modifier** to **protestant, reformed or anglican** nations
 
 #### Vassals:

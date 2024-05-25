@@ -2,7 +2,7 @@
  as_stats_tt: "£as_header£            Stats \n\n   £icon_development_in_text£ My Rating: §Y[Root.as_rating.GetValue]§! ([Root.PowerRating])\n   £as_points£ My Available Points: §G[Root.as_points.GetValue] / [Root.as_points_max.GetValue]§! \n   £as_cost£ My Cost: §R[Root.as_cost.GetValue]§!"
  as_treaties_tt: "£as_header£            Treaties\n"
  as_treaty_tt: "[This.TreatyType] \n    £as_cost£ Cost: §R[This.as_cost.GetValue]§!"
- as_ratings_tt: "£as_header£            Power Ratings\n\n   £as_power_rating£ Great: £icon_development_in_text£§Y[Root.as_rating_great_power.GetValue]-[Root.as_top_rating.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_great_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_great_power.GetValue]§!\n   £as_power_rating£ Major: £icon_development_in_text£§Y[Root.as_rating_major_power.GetValue]-[Root.as_rating_great_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_major_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_major_power.GetValue]§!\n   £as_power_rating£ Prominent: £icon_development_in_text£§Y[Root.as_rating_prom_power.GetValue]-[Root.as_rating_major_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_prom_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_prom_power.GetValue]§!\n   £as_power_rating£ Notable: £icon_development_in_text£§Y[Root.as_rating_notable_power.GetValue]-[Root.as_rating_prom_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_notable_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_notable_power.GetValue]§!\n   £as_power_rating£ Minor: £icon_development_in_text£§Y[Root.as_rating_minor_power.GetValue]-[Root.as_rating_notable_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_minor_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_minor_power.GetValue]§!\n   £as_power_rating£ Puny: £icon_development_in_text£§Y[Root.as_rating_puny_power.GetValue]-[Root.as_rating_minor_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_puny_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_puny_power.GetValue]§!"
+ as_ratings_tt: "£as_header£            Power Ratings\n\n   £as_power_rating£ Colossal: £icon_development_in_text£§Y > [Root.as_rating_colossal_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_colossal_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_colossal_power.GetValue]§!\n   £as_power_rating£ Great: £icon_development_in_text£§Y[Root.as_rating_great_power.GetValue]-[Root.as_rating_colossal_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_great_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_great_power.GetValue]§!\n   £as_power_rating£ Major: £icon_development_in_text£§Y[Root.as_rating_major_power.GetValue]-[Root.as_rating_great_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_major_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_major_power.GetValue]§!\n   £as_power_rating£ Prominent: £icon_development_in_text£§Y[Root.as_rating_prom_power.GetValue]-[Root.as_rating_major_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_prom_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_prom_power.GetValue]§!\n   £as_power_rating£ Notable: £icon_development_in_text£§Y[Root.as_rating_notable_power.GetValue]-[Root.as_rating_prom_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_notable_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_notable_power.GetValue]§!\n   £as_power_rating£ Minor: £icon_development_in_text£§Y[Root.as_rating_minor_power.GetValue]-[Root.as_rating_notable_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_minor_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_minor_power.GetValue]§!\n   £as_power_rating£ Puny: £icon_development_in_text£§Y[Root.as_rating_puny_power.GetValue]-[Root.as_rating_minor_power.GetValue]§!  £as_points£ Points: §G[Root.as_points_max_puny_power.GetValue]§!  £as_cost£ Cost: §R[Root.as_cost_puny_power.GetValue]§!"
  
  as_treaty_alliance: "£as_alliance£ Alliance"
  as_treaty_subject: "£as_subject£ Subject"
@@ -10,6 +10,7 @@
  as_treaty_support: "£as_support£ Supporting Independence"
  as_treaty_tributary: "£as_tributary£ Tributary Overlord"
 
+ as_rating_colossal: "£as_power_rating£ Colossal Power"
  as_rating_great: "£as_power_rating£ Great Power"
  as_rating_major: "£as_power_rating£ Major Power"
  as_rating_prominent: "£as_power_rating£ Prominent Power"
@@ -29,6 +30,8 @@
  as_notify_decision: "Toggle Alliance System Notifications"
  as_notify_enabled: "Enabled"
  as_notify_disabled: "Disabled"
+
+ as_toggle_ui_button: "Open"
 
  BREAKING_ALLIANCE_RULES:0 "You are breaking the alliance rules."
  FROM_BREAKING_ALLIANCE_RULES:0 "[From.GetName] is breaking the alliance rules."

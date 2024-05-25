@@ -207,55 +207,57 @@ country_event = {
     }
 }
 
-# Config - CONFIG VERSION IN TRIGGER AND EFFECT MUST BE THE SAME
-country_event = {
-    id = as.8
-    title = as.8.t
-    desc = as.8.d
-    picture = TEMPORAL_RIFT_eventPicture
-    hidden = yes
-    mean_time_to_happen = {
-        days = 1
-    }
-    trigger = {
-        NOT = {
-            is_variable_equal = { which = as_config_version value = 1 } # <--- CONFIG VERSION
-        }
-    }
-    immediate = {
-        as_config = {
-            # Config version - increment value everytime you update the config
-            # This will force the game to update the config for all nations on saves with old configs.
-            # Also used to check if new tags have been added to the game that need a config.
-            config_version = 1 # <--- CONFIG VERSION
-
-            # Base alliance points each player receives
-            base_points = 11
-
-            # HRE Emperor cost addition (before 1470) !!! NOT WORKING !!!
-            hre_emperor_cost = 0
-
-            # Point cost per power rating
-            great_power_cost = 6
-            major_power_cost = 5
-            prominent_power_cost = 4
-            notable_power_cost = 3
-            minor_power_cost = 2
-            puny_power_cost = 1
-
-            # Each power status is a percentage of the top rating in the world
-            # If a country is above this percentage, they are considered have that power status
-            great_power_percentage = 0.8
-            major_power_percentage = 0.65
-            prominent_power_percentage = 0.45
-            notable_power_percentage = 0.25
-            minor_power_percentage = 0.05
-            puny_power_percentage = 0
-	    }
-    }
-    option = {
-        name = as.8.a
-    }
+# Config - CONFIG VERSION IN TRIGGER AND EFFECT MUST BE THE SAME 
+country_event = { 
+    id = as.8 
+    title = as.8.t 
+    desc = as.8.d 
+    picture = TEMPORAL_RIFT_eventPicture 
+    hidden = yes 
+    mean_time_to_happen = { 
+        days = 1 
+    } 
+    trigger = { 
+        NOT = { 
+            is_variable_equal = { which = as_config_version value = 1 } # <--- CONFIG VERSION 
+        } 
+    } 
+    immediate = { 
+        as_config = { 
+            # Config version - increment value everytime you update the config 
+            # This will force the game to update the config for all nations on saves with old configs. 
+            # Also used to check if new tags have been added to the game that need a config. 
+            config_version = 1 # <--- CONFIG VERSION 
+ 
+            # Base alliance points each player receives 
+            base_points = 11 
+ 
+            # HRE Emperor cost addition (before 1470) !!! NOT WORKING !!! 
+            hre_emperor_cost = 0 
+ 
+            # Point cost per power rating 
+            colossal_power_cost = 7 
+            great_power_cost = 6 
+            major_power_cost = 5 
+            prominent_power_cost = 4 
+            notable_power_cost = 3 
+            minor_power_cost = 2 
+            puny_power_cost = 1 
+ 
+            # Each power status is a percentage of the top rating in the world 
+            # If a country is above this percentage, they are considered have that power status 
+            colossal_power_percentage = 1.2 
+            great_power_percentage = 0.8 
+            major_power_percentage = 0.65 
+            prominent_power_percentage = 0.45 
+            notable_power_percentage = 0.25 
+            minor_power_percentage = 0.05 
+            puny_power_percentage = 0 
+	    } 
+    } 
+    option = { 
+        name = as.8.a 
+    } 
 }
 
 # Fuck Ming
