@@ -31,6 +31,12 @@
  as_notify_enabled: "Enabled"
  as_notify_disabled: "Disabled"
 
+ disable_as_decision_title: "§M‡‡§! Block Diplomatic Actions: §M[Root.AsEnabled]§!"
+ disable_as_decision_desc: "Toggle whether the alliance system blocks diplomatic actions."
+ as_notify_decision: "Toggle Alliance System Blocks Diplomatic Actions"
+ as_enabled: "Enabled"
+ as_disabled: "Disabled"
+
  as_toggle_ui_button: "Open"
 
  BREAKING_ALLIANCE_RULES:0 "You are breaking the alliance rules."

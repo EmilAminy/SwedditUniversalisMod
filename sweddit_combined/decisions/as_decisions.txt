@@ -62,4 +62,38 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	disable_as_decision = {
+		potential = {
+			is_player = yes
+			NOT = {
+				has_country_flag = as_disable_switch
+			}
+		}
+		allow = {
+			hidden_trigger = {
+				always = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = disable_alliance_system
+				}
+				clr_country_flag = disable_alliance_system
+			}
+			else = {
+				set_country_flag = disable_alliance_system
+			}
+			set_country_flag = as_disable_switch
+			hidden_effect = {
+				country_event = {
+					id = as.10
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

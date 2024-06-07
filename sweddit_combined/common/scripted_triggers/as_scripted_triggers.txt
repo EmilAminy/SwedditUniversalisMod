@@ -1,5 +1,8 @@
 is_player = {
-    ai = no
+    OR = {
+        ai = no
+        exists = JMN
+    }
 }
 
 is_player_allied_with_player = {
@@ -74,6 +77,8 @@ would_break_rules = {
     $compare$ = {
         is_player = yes
     }
+    NOT = { has_country_flag = disable_alliance_system }
+    $compare$ = { NOT = { has_country_flag = disable_alliance_system } }
     OR = {
         has_country_flag = no_alliances # Fuck Ming
         AND = {

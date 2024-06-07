@@ -118,3 +118,21 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+    name = AsEnabled
+    random = no
+
+    text = {
+        localisation_key = as_disabled
+        trigger = {
+            has_country_flag = disable_alliance_system
+        }
+    }
+    text = {
+        localisation_key = as_enabled
+        trigger = {
+            always = yes
+        }
+    }
+}

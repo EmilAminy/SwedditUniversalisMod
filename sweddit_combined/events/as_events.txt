@@ -290,3 +290,23 @@ country_event = {
         }
     }
 }
+
+# Disable Switch
+country_event = {
+    id = as.10
+    title = as.10.t
+    desc = as.10.d
+    picture = TEMPORAL_RIFT_eventPicture
+    is_triggered_only = yes
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    trigger = {
+        always = yes
+    }
+    option = {
+        name = as.10.a
+        clr_country_flag = as_disable_switch
+    }
+}

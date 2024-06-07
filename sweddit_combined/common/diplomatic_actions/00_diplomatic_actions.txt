@@ -164,7 +164,10 @@ declarewar = {
 		tooltip = BREAKING_ALLIANCE_RULES
 		potential = { 
 			is_player = yes
-			has_country_flag = breaking_rules
+			AND = {
+				has_country_flag = breaking_rules
+				NOT = { has_country_flag = disable_alliance_system }
+			}
 		}
 		allow = {
 			always = no
@@ -362,7 +365,11 @@ allianceaction = {
 	condition = {
 		tooltip = BREAKING_ALLIANCE_RULES
 		potential = {
-			has_country_flag = breaking_rules
+			AND = {
+				has_country_flag = breaking_rules
+				NOT = { has_country_flag = disable_alliance_system }
+
+			}
 		}
 		allow = {
 			always = no
@@ -371,8 +378,11 @@ allianceaction = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -815,8 +825,11 @@ tributary_state_action = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -858,7 +871,10 @@ ask_for_tributary_state_action = {
 	condition = {
 		tooltip = BREAKING_ALLIANCE_RULES
 		potential = {
-			has_country_flag = breaking_rules
+			AND = {
+				has_country_flag = breaking_rules
+				NOT = { has_country_flag = disable_alliance_system }
+			}
 		}
 		allow = {
 			always = no
@@ -887,8 +903,11 @@ guaranteeaction = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -920,8 +939,11 @@ support_independence_action = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
