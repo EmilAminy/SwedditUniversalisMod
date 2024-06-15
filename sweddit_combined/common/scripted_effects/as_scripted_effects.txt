@@ -161,6 +161,7 @@ update_ratings = {
 						is_subject_of_type = crown_colony
 						is_subject_of_type = private_enterprise
 						is_subject_of_type = self_governing_colony
+						is_subject_of_type = european_colony
 					}
 				}
 				divide_variable = {
@@ -558,6 +559,7 @@ update_point_costs = {
 					is_subject_of_type = crown_colony
 					is_subject_of_type = private_enterprise
 					is_subject_of_type = self_governing_colony
+					is_subject_of_type = european_colony
 				}
 			}
 			divide_variable = {
