@@ -1,3 +1,4 @@
+# Sweddit change: Allow crisis in age of discovery
 ming_crisis = {
 	potential = {
 		tag = MNG
