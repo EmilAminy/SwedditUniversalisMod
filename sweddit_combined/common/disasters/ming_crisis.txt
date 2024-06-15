@@ -7,6 +7,12 @@ ming_crisis = {
 	
 	can_start = {
 		has_any_disaster = no
+		NOT = { 
+			AND = {
+				ai = yes
+				current_age = age_of_discovery 
+			}
+		}
 		if = {
 			limit = {	
 				has_dlc = "Mandate of Heaven"

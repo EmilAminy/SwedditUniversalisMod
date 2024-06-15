@@ -694,6 +694,7 @@ waging_war_for_china = {
 ##################################################
 # HRE modifiers
 ##################################################
+# Sweddit change: Any non-catholic HRE gives bonuses to all the non-catholics
 hre_dominant_catholic = {
 	potential = {
 		capital_scope = {
@@ -720,7 +721,6 @@ hre_dominant_catholic = {
 	imperial_authority = 0.25
 }
 
-# Sweddit change: Any non-catholic HRE gives bonuses to all the non-catholics
 hre_dominant_protestant = {
 	potential = {
 		capital_scope = {
