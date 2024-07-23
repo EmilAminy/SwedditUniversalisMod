@@ -81,40 +81,48 @@ christian = {
 					harsh = {
 						relation_with_heretics = -10
 						global_heretic_missionary_strength  = 0.02
+						trent_harsh = 1
 					}	
 					concilatory = {
 						relation_with_heretics = 5
 						tolerance_heretic = 2
+						trent_concilatory = 1
 					}
 				}
 				second_concession = {
 					harsh = {
 						relation_with_heretics = -10
 						institution_spread_from_true_faith = 0.30
+						trent_harsh = 1
 					}	
 					concilatory = {
 						relation_with_heretics = 5
 						global_institution_spread = 0.10
+						trent_concilatory = 1
 					}
 				}
 				third_concession = {
 					harsh = {
 						relation_with_heretics = -10
 						manpower_in_true_faith_provinces  = 0.1
+						trent_harsh = 1
 					}	
 					concilatory = {
 						relation_with_heretics = 5
 						global_manpower_modifier = 0.05
+						trent_concilatory = 1
 					}
 				}
 				fourth_concession = {
 					harsh = {
 						relation_with_heretics = -10
 						warscore_cost_vs_other_religion  = -0.10
+						trent_harsh = 1
 					}	
 					concilatory = {
 						relation_with_heretics = 5
 						curia_powers_cost = -0.10
+						trent_concilatory = 1
 					}
 				}
 			}
@@ -131,6 +139,7 @@ christian = {
 				cost = 50
 				potential = {
 					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
 				}
 				allow = {
 					NOT = { war_with = PAP }
@@ -141,6 +150,25 @@ christian = {
 						name = "papal_sanction_for_church_taxes"
 						duration = 7300
 					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -150,6 +178,7 @@ christian = {
 				cost = 50
 				potential = {
 					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
 				}
 				allow = {
 					NOT = { war_with = PAP }
@@ -160,6 +189,25 @@ christian = {
 						name = "papal_blessing"
 						duration = 7300
 					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -169,6 +217,7 @@ christian = {
 				cost = 50
 				potential = {
 					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
 				}
 				allow = {
 					NOT = { war_with = PAP }
@@ -179,6 +228,25 @@ christian = {
 						name = "papal_indulgence"
 						duration = 7300
 					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -188,6 +256,7 @@ christian = {
 				cost = 100
 				potential = {
 					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
 				}
 				allow = {
 					NOT = { war_with = PAP }
@@ -195,6 +264,25 @@ christian = {
 				}
 				effect = {
 					add_stability = 1
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -208,6 +296,7 @@ christian = {
 				cost = 50
 				potential = {
 					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
 				}
 				allow = {
 					NOT = { war_with = PAP }
@@ -217,6 +306,25 @@ christian = {
 					add_country_modifier = {
 						name = "usury_forgiven"
 						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
 					}
 				}
 				ai_will_do = {
@@ -231,10 +339,440 @@ christian = {
 				cost = 50
 				potential = {
 					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
 				}
 				allow = {
 					is_at_war = yes
 					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = papal_sanction_for_holy_war }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_sanction_for_holy_war"
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						manpower_percentage = 0.5
+					}
+				}
+			}
+			send_papal_legate = {
+				cost = 50
+				potential = {
+					NOT = { tag = PAP }
+					is_papal_controller = no
+					NOT = { has_estate_privilege = EE_bishops_curia }
+				}
+				allow = {
+					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = papal_legate }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_legate"
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			sanction_commercial_monopoly = {
+				cost = 50
+				potential = {
+					NOT = { tag = PAP }
+					NOT = { has_estate_privilege = EE_bishops_curia }
+				}
+				allow = {
+					NOT = { war_with = PAP }
+					NOT = { mercantilism = 100 }
+				}
+				effect = {
+					add_mercantilism = 1
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = { has_idea_group = trade_ideas }
+					}
+				}
+			}
+			investigate_heresy = {
+				curia_treasury_cost = 500
+				potential = {
+					has_dlc = "Emperor"
+					is_papal_controller = yes
+					tag = PAP
+					OR = {
+						NOT = {
+							has_country_flag = pap_investigate_heresy_cooldown
+							had_country_flag = {
+								days = 3650
+								flag = pap_investigate_heresy_cooldown
+							}
+						}
+					}
+				}
+				allow = {
+					is_papal_controller = yes
+					reform_desire = 0.1
+				}
+				effect = {
+					add_reform_desire = -0.05
+					add_reform_desire_scale = 0.5
+					clr_country_flag = pap_investigate_heresy_cooldown
+					set_country_flag = pap_investigate_heresy_cooldown
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			EE_levy_church_tax = {
+				cost = 0
+				potential = {
+					NOT = { tag = PAP }
+					has_estate_privilege = EE_bishops_curia
+				}
+				allow = {
+					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = EE_bishops_tax_sanction }
+					legitimacy = 70
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 60
+					}
+				}
+				effect = {
+					add_legitimacy = -10
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = -5
+					}
+					add_country_modifier = {
+						name = EE_bishops_tax_sanction
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}				
+			}			
+			EE_bless_monarch = {
+				cost = 0
+				potential = {
+					NOT = { tag = PAP }
+					has_estate_privilege = EE_bishops_curia
+				}
+				allow = {
+					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = EE_bishops_blessing }
+				}
+				effect = {
+					add_legitimacy = -10
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = -5
+					}
+					add_country_modifier = {
+						name = EE_bishops_blessing
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			EE_indulgence_for_sins = {
+				cost = 0
+				potential = {
+					NOT = { tag = PAP }
+					has_estate_privilege = EE_bishops_curia
+				}
+				allow = {
+					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = EE_bishops_dynasty_sanction }
+				}
+				effect = {
+					add_legitimacy = -10
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = -5
+					}
+					add_country_modifier = {
+						name = EE_bishops_dynasty_sanction
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			EE_forgiveness_for_usury = {
+				cost = 0
+				potential = {
+					NOT = { tag = PAP }
+					has_estate_privilege = EE_bishops_curia
+				}
+				allow = {
+					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = EE_bishops_usury_forgiveness }
+				}
+				effect = {
+					add_legitimacy = -10
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = -5
+					}
+					add_country_modifier = {
+						name = EE_bishops_usury_forgiveness
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = { num_of_loans = 1 }
+					}
+				}
+			}			
+			EE_proclaim_holy_war = {
+				cost = 0
+				potential = {
+					NOT = { tag = PAP }
+					has_estate_privilege = EE_bishops_curia
+				}
+				allow = {
+					is_at_war = yes
+					NOT = { war_with = PAP }
+					NOT = { has_country_modifier = EE_bishops_war_sanction }
+				}
+				effect = {
+					add_legitimacy = -10
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = -5
+					}
+					add_country_modifier = {
+						name = EE_bishops_war_sanction
+						duration = 7300
+					}
+					if = {
+						limit = {
+							has_country_flag = me_bur_curia_actions_rewards_flag
+							check_variable = {
+								which = BurCuriaCount
+								value = 1
+							}
+						}
+						add_estate_loyalty = {
+							estate = estate_church
+							loyalty = 10
+						}
+						hidden_effect = {
+							EE_change_variable = {
+								which = BurCuriaCount
+								subtract = 1
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						manpower_percentage = 0.5
+					}
+				}
+			}
+			##Pope Unique##
+			fund_new_inquisitors = {
+				curia_treasury_cost = 500
+				potential = {
+					tag = PAP
+					has_country_flag = me_pap_peaceful_pope_path
+				}
+				allow = {
+					is_papal_controller = yes
+				}
+				effect = {
+					define_advisor = {
+						type = inquisitor
+						skill = 2
+						cost_multiplier = 0.5
+					}
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+
+			proclaim_holy_war_pap = {
+				curia_treasury_cost = 1000
+				potential = {
+					tag = PAP
+					has_country_flag = me_pap_peaceful_pope_path
+				}
+				allow = {
+					is_papal_controller = yes
+					is_at_war = yes
 					NOT = { has_country_modifier = papal_sanction_for_holy_war }
 				}
 				effect = {
@@ -251,63 +789,152 @@ christian = {
 					}
 				}
 			}
-			send_papal_legate = {
-				cost = 50
+
+			support_the_clergy = {
+				curia_treasury_cost = 1000
 				potential = {
-					NOT = { tag = PAP }
-					is_papal_controller = no
+					tag = PAP
+					has_country_flag = me_pap_peaceful_pope_path
 				}
 				allow = {
-					NOT = { war_with = PAP }
-					NOT = { has_country_modifier = papal_legate }
+					is_papal_controller = yes
+				}
+				effect = {
+					ME_add_loyalty_for_privilege = { estate = church }
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			levy_church_tax_pap = {
+				curia_treasury_cost = 750
+				potential = {
+					tag = PAP
+					OR = {
+						has_country_flag = me_pap_peaceful_pope_path
+						has_country_flag = me_pap_battle_pope
+					}
+				}
+				allow = {
+					is_papal_controller = yes
+					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
 				}
 				effect = {
 					add_country_modifier = {
-						name = "papal_legate"
+						name = "papal_sanction_for_church_taxes"
 						duration = 7300
 					}
 				}
 				ai_will_do = {
 					factor = 1
-				}
-			}	
-			sanction_commercial_monopoly = {
-				cost = 50
+				}				
+			}
+			forgiveness_for_usury_pap = {
+				curia_treasury_cost = 750
 				potential = {
-					NOT = { tag = PAP }
+					tag = PAP
+					OR = {
+						has_country_flag = me_pap_peaceful_pope_path
+						has_country_flag = me_pap_battle_pope
+					}
 				}
 				allow = {
-					NOT = { war_with = PAP }
-					NOT = { mercantilism = 100 }
+					is_papal_controller = yes
+					NOT = { has_country_modifier = usury_forgiven }
 				}
 				effect = {
-					add_mercantilism = 1
+					add_country_modifier = {
+						name = "usury_forgiven"
+						duration = 7300
+					}
 				}
 				ai_will_do = {
 					factor = 1
 					modifier = {
 						factor = 0
-						NOT = { has_idea_group = trade_ideas }
+						NOT = { num_of_loans = 1 }
 					}
 				}
 			}
-			investigate_heresy = {
-				curia_treasury_cost = 500
+
+			#Military Pope:
+			me_pap_demand_catholic_levies = {
+				curia_treasury_cost = 1000
 				potential = {
-					has_dlc = "Emperor"
-					is_papal_controller = yes
 					tag = PAP
+					has_country_flag = me_pap_battle_pope
 				}
 				allow = {
 					is_papal_controller = yes
-					reform_desire = 0.05
+					is_at_war = yes
+					NOT = { has_country_modifier = me_pap_raised_catholic_levies }
 				}
 				effect = {
-					add_reform_desire = -0.05
-					add_reform_desire_scale = 0.5
+					add_yearly_manpower = 0.5
+					add_country_modifier = {
+						name = "me_pap_raised_catholic_levies"
+						duration = 7300
+					}
 				}
 				ai_will_do = {
-					factor = 0
+					factor = 1
+					modifier = {
+						factor = 0
+						manpower_percentage = 0.5
+					}
+				}
+			}
+			
+			me_pap_get_money_from_curia_treasury = {
+				curia_treasury_cost = 1500
+				potential = {
+					tag = PAP
+					has_country_flag = me_pap_battle_pope
+				}
+				allow = {
+					is_papal_controller = yes
+					OR = {
+						NOT = {
+							has_country_flag = me_pap_seized_curia_treasury
+							had_country_flag = {
+								days = 1825
+								flag = me_pap_seized_curia_treasury
+							}
+						}
+					}
+				}
+				effect = {
+					add_corruption = 1
+					add_years_of_income = 0.6
+					clr_country_flag = me_pap_seized_curia_treasury
+					set_country_flag = me_pap_seized_curia_treasury
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			
+			me_pap_expansion_militarization = {
+				curia_treasury_cost = 500
+				potential = {
+					tag = PAP
+					has_country_flag = me_pap_battle_pope
+				}
+				allow = {
+					is_papal_controller = yes
+					mission_completed = ME_pap_militarization
+					NOT = {
+						has_country_flag = me_pap_increase_in_militarization
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = me_pap_increase_in_militarization
+						duration = 3650
+					}
+				}
+				ai_will_do = {
+					factor = 1
 				}
 			}
 		}
@@ -425,6 +1052,7 @@ christian = {
 			justified_religious_war_aspect
 			war_preaches_aspect
 			head_of_the_church_aspect
+			NED_reformed_aspect
 			anglican_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
@@ -1453,7 +2081,6 @@ muslim = {
 }
 
 eastern = {
-    # Sweddit change: Can now become defender of faith
     defender_of_faith = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
@@ -1592,7 +2219,6 @@ eastern = {
 }
 
 dharmic = {
-    # Sweddit change: Can now become defender of faith
     defender_of_faith = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
@@ -2246,7 +2872,6 @@ dharmic = {
 }
 
 pagan = {
-    # Sweddit change: Can now become defender of faith
     defender_of_faith = yes
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
@@ -2560,7 +3185,7 @@ jewish_group = {
 
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
-    defender_of_faith = yes
+	defender_of_faith = yes
 	zoroastrian = {
 		icon = 26
 		color = { 127 178 51 }

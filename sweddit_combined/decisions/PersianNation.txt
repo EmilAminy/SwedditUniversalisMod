@@ -1,4 +1,5 @@
 country_decisions = {
+
 	persian_nation = {
 		major = yes
 		potential = {
@@ -40,19 +41,12 @@ country_decisions = {
 			NOT = { tag = ARB }
 			NOT = { tag = TIM }
 			NOT = { was_tag = TIM }
-			if = {
-				limit = { has_dlc = "King of Kings" }
-				OR = {
-					culture_group = iranian
-					primary_culture = azerbaijani
-				}
-			}
-			else = {
-				OR = {
-					culture_group = iranian
-					primary_culture = azerbaijani
-					tag = AKK
-				}
+			OR = {
+				culture_group = iranian
+				primary_culture = azerbaijani
+				tag = AKK
+				was_tag = AKK
+				has_country_flag = MSY_may_form_persia
 			}
 			is_colonial_nation = no
 			OR = {
@@ -197,6 +191,7 @@ country_decisions = {
 				change_primary_culture = persian
 			}
 			set_country_flag = formed_persia_flag
+			clr_country_flag = ME_can_use_timurid_legitimacy
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

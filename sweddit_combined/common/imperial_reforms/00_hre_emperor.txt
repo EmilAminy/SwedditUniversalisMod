@@ -9,6 +9,16 @@ emperor_reichsreform = {
 	}
 	on_effect = {
 		imperial_ban_allowed = yes
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 	off_effect = {
 		imperial_ban_allowed = no
@@ -28,6 +38,18 @@ emperor_reichsregiment = {
 		diplomatic_reputation = 1
 		diplomats = 1
 	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
+	}
 	required_reform = emperor_reichsreform
 	gui_container = mainline
 }
@@ -45,6 +67,16 @@ emperor_reichsstabilitaet = {
 	}
 	on_effect = {
 		custom_tooltip = "EXPAND_EMPIRE_CB"
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 }
 
@@ -58,6 +90,18 @@ emperor_gemeinerpfennig = {
 	}
 	emperor_per_prince = {
 		global_tax_income = 0.5
+	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 	required_reform = emperor_reichsstabilitaet
 	gui_container = mainline
@@ -78,6 +122,14 @@ emperor_perpetual_diet = {
 	on_effect = {
 		custom_tooltip = "PERPETUAL_DIET_ESTABLISHED"
 		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
 			random_province = {
 				limit = {
 					is_part_of_hre = yes
@@ -122,6 +174,18 @@ emperor_landsknechtswesen = {
 	all = {
 		imperial_mercenary_cost = -0.25
 	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
+	}
 }
 
 emperor_landfriede = {
@@ -140,6 +204,16 @@ emperor_landfriede = {
 	}
 	on_effect = {
 		internal_hre_cb = no
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 	off_effect = {
 		internal_hre_cb = yes
@@ -161,6 +235,18 @@ emperor_reichstag_collegia = {
 	emperor = {
 		max_free_cities = 3
 	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
+	}
 }
 
 emperor_expand_gemeiner_pfennig = {
@@ -181,6 +267,18 @@ emperor_expand_gemeiner_pfennig = {
 	province = {
 		local_friendly_movement_speed = 0.1
 	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
+	}
 }
 
 emperor_rechenschaft = {
@@ -198,6 +296,18 @@ emperor_rechenschaft = {
 	emperor = {
 		max_electors = 1
 	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
+	}
 }
 
 emperor_geteilte_macht = {
@@ -212,6 +322,16 @@ emperor_geteilte_macht = {
 	}
 	on_effect = {
 		custom_tooltip = GETEILTE_MACHT_EFFECT
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 	elector_per_prince = {
 		global_tax_income = 0.5
@@ -232,6 +352,16 @@ emperor_reichskrieg = {
 	}
 	on_effect = {
 		enable_imperial_realm_war = no
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 
 	off_effect = {
@@ -246,6 +376,18 @@ emperor_hofgericht = {
 	}
 	emperor = {
 		core_creation = -0.10
+	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 	required_reform = emperor_perpetual_diet
 	disabled_by = emperor_reichstag_collegia
@@ -264,6 +406,18 @@ emperor_imperial_estates = {
 	emperor = {
 		imperial_authority = 0.25
 	}
+	on_effect = {
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
+	}
 }
 
 emperor_erbkaisertum = {
@@ -277,12 +431,38 @@ emperor_erbkaisertum = {
 	on_effect = {
 		if = {
 			limit = {
-				hre_religion_locked = no
-				hre_religion_treaty = no
+				OR = {
+					PAP = { is_emperor = yes }
+					NOT = {
+						OR = {
+							is_religion_enabled = reformed
+							is_religion_enabled = protestant
+						}
+					}
+				}
 			}
-			set_hre_religion_treaty = yes
+			set_hre_religion_locked = yes
+		}
+		else = {
+			if = {
+				limit = {
+					hre_religion_locked = no
+					hre_religion_treaty = no
+				}
+				set_hre_religion_treaty = yes
+			}
 		}
 		hre_inheritable = yes
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
+		}
 	}
 	off_effect = {
 		hre_inheritable = no
@@ -321,6 +501,14 @@ emperor_privilegia_de_non_appelando = {
 				}
 				country_event = { id = 9074 }
 			}
+			emperor = {
+				if = {
+					limit = {
+						has_country_flag = me_sty_emperor_of_the_romans
+					}
+					me_increase_emperor_of_romans_level = yes
+				}
+			}
 		}
 	}
 	required_reform = emperor_erbkaisertum
@@ -334,8 +522,19 @@ emperor_renovatio = {
 		has_dlc = "Emperor"
 	}
 	on_effect = {
-		emperor = {
-			country_event = { id = 9075 tooltip = renovatio_effect }
+		if = {
+			limit = {
+				PAP = { is_emperor = yes }
+				emperor = { tag = PAP }
+			}
+			emperor = {
+				country_event = { id = papacy_events.991 tooltip = renovatio_effect }
+			}
+		}
+		else = {
+			emperor = {
+				country_event = { id = 9075 tooltip = renovatio_effect }
+			}
 		}
 	}
 	required_reform = emperor_privilegia_de_non_appelando

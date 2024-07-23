@@ -22,12 +22,12 @@ age_of_discovery = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = obj_discover_america_tooltip
-				OR = {
-					north_america = { has_discovered = ROOT }
-					south_america = { has_discovered = ROOT }
-					new_world = { has_discovered = ROOT }
+					OR = {
+						north_america = { has_discovered = ROOT }
+						south_america = { has_discovered = ROOT }
+						new_world = { has_discovered = ROOT }
+					}
 				}
-			}
 		}
 		obj_100_development = {
 			allow = {
@@ -235,7 +235,7 @@ age_of_discovery = {
 				tag = POR
 			}
 			modifier = {
-				global_colonial_growth = 50
+				global_colonial_growth = 35
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
@@ -287,7 +287,10 @@ age_of_reformation = {
 	start = 1530
 	
 	can_start = {
-		is_religion_enabled = protestant
+		OR = {
+			is_religion_enabled = protestant
+			is_year = 1520
+		}
 	}
 	
 	
@@ -319,18 +322,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			calc_true_if = {
-				all_subject_country = {
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-						is_subject_of_type = european_colony
-					}
-				}
-				amount = 5
-			}
+			colony = 5
 		}
 		
 		obj_force_converted = {
@@ -482,6 +474,14 @@ age_of_reformation = {
 				leader_land_shock = 1
 				num_of_age_rewards = 1
 			}
+			effect = {
+				if = {
+					limit = {
+						mission_completed = EE_spa_adopt_pike_and_shot
+					}
+					add_army_tradition_or_mil_power = { amount = 10 }
+				}
+			}
 			ai_will_do = {
 				factor = 100
 			}
@@ -525,7 +525,6 @@ age_of_reformation = {
 			}
 		}
 		
-		# Sweddit change: Replaced -20% dev cost to -10% tech cost
 		ab_persia_development = {
 			allow = {
 				OR = {
@@ -632,7 +631,6 @@ age_of_absolutism = {
 			}
 		}
 
-		# Sweddit change: Replaced reduced change rival cost to +100% power projection from insults
 		ab_rival_change = {
 			effect = { 
 				on_age_ability_taken = { age = age_of_absolutism }
@@ -912,7 +910,6 @@ age_of_revolutions = {
 				factor = 10
 			}
 		}
-		# Sweddit change: Changed age modifier from unlimited coring range to +100% supply limit modifier
 		ab_no_distance_for_core = {
 			effect = { 
 				on_age_ability_taken = { age = age_of_revolutions }

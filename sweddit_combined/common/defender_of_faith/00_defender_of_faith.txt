@@ -1,7 +1,5 @@
 # [range_from, range_to[
 
-# Sweddit change: Flipped the effects of the different levels so level 5 is least powerful and level 1 is most powerful
-
 defender_of_faith_1 = {
 	level = 1
     range_from = 50
@@ -11,6 +9,10 @@ defender_of_faith_1 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		monthly_caliphal_legitimacy = 0.1
+		monthly_frankish_chivalry = 0.1
+		monthly_papal_militarization = 0.1
+		monthly_golden_fleece_support = 0.02
     }
 	ai_will_do = {
 		factor = 0.1
@@ -61,6 +63,10 @@ defender_of_faith_2 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		monthly_caliphal_legitimacy = 0.1
+		monthly_frankish_chivalry = 0.1
+		monthly_papal_militarization = 0.1
+		monthly_golden_fleece_support = 0.04
     }
 	ai_will_do = {
 		factor = 0.2
@@ -113,6 +119,10 @@ defender_of_faith_3 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		monthly_caliphal_legitimacy = 0.1
+		monthly_frankish_chivalry = 0.1
+		monthly_papal_militarization = 0.1
+		monthly_golden_fleece_support = 0.06
     }
 	ai_will_do = {
 		factor = 0.5
@@ -166,6 +176,10 @@ defender_of_faith_4 = {
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
 		manpower_in_true_faith_provinces = 0.2
+		monthly_caliphal_legitimacy = 0.1
+		monthly_frankish_chivalry = 0.1
+		monthly_papal_militarization = 0.1
+		monthly_golden_fleece_support = 0.08
     }
 	ai_will_do = {
 		factor = 1
@@ -218,6 +232,10 @@ defender_of_faith_5 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		monthly_caliphal_legitimacy = 0.1
+		monthly_frankish_chivalry = 0.1
+		monthly_papal_militarization = 0.1
+		monthly_golden_fleece_support = 0.1
     }
 	same_faith_modifier = {
 		# Applies also on the DoF
