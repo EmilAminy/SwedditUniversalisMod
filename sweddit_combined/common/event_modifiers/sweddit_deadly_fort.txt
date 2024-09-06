@@ -1,0 +1,115 @@
+deadly_fort_0 = {
+    garrison_damage = 0.075
+}
+
+deadly_fort_1 = {
+    garrison_damage = 0.15
+}
+
+deadly_fort_2 = {
+    garrison_damage = 0.225
+}
+
+deadly_fort_3 = {
+    garrison_damage = 0.3
+}
+
+deadly_fort_4 = {
+    garrison_damage = 0.375
+}
+
+deadly_fort_5 = {
+    garrison_damage = 0.45
+}
+
+deadly_fort_6 = {
+    garrison_damage = 0.525
+}
+
+deadly_fort_7 = {
+    garrison_damage = 0.6
+}
+
+deadly_fort_8 = {
+    garrison_damage = 0.675
+}
+
+deadly_fort_9 = {
+    garrison_damage = 0.75
+}
+
+deadly_fort_10 = {
+    garrison_damage = 0.825
+}
+
+deadly_fort_11 = {
+    garrison_damage = 0.9
+}
+
+deadly_fort_12 = {
+    garrison_damage = 0.975
+}
+
+deadly_fort_13 = {
+    garrison_damage = 1.05
+}
+
+deadly_fort_14 = {
+    garrison_damage = 1.125
+}
+
+deadly_fort_15 = {
+    garrison_damage = 1.2
+}
+
+deadly_fort_16 = {
+    garrison_damage = 1.275
+}
+
+deadly_fort_17 = {
+    garrison_damage = 1.35
+}
+
+deadly_fort_18 = {
+    garrison_damage = 1.425
+}
+
+deadly_fort_19 = {
+    garrison_damage = 1.5
+}
+
+deadly_fort_20 = {
+    garrison_damage = 1.575
+}
+
+deadly_fort_21 = {
+    garrison_damage = 1.65
+}
+
+deadly_fort_22 = {
+    garrison_damage = 1.725
+}
+
+deadly_fort_23 = {
+    garrison_damage = 1.8
+}
+
+deadly_fort_24 = {
+    garrison_damage = 1.875
+}
+
+deadly_fort_25 = {
+    garrison_damage = 1.95
+}
+
+deadly_fort_26 = {
+    garrison_damage = 2.025
+}
+
+deadly_fort_27 = {
+    garrison_damage = 2.1
+}
+
+deadly_fort_28 = {
+    garrison_damage = 2.175
+}

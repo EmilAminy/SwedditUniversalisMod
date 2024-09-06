@@ -9,6 +9,29 @@ teleporting_diplomats = {
 	envoy_travel_time = -1
 }
 
+merc_nerf = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		always = yes
+	}
+	
+	mercenary_discipline = -0.05
+}
+
+naval_nerf = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		always = yes
+	}
+	
+	capture_ship_chance = -10
+	sunk_ship_morale_hit_recieved = -1
+}
+
 sweddit_reichskrieger = {
 	potential = {
 		hre_reform_passed = emperor_reichskrieg

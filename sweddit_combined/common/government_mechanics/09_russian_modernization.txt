@@ -27,6 +27,7 @@ russian_rule_mechanic = {
 		has_dlc = "Domination"
 	}
 	powers = {
+		# Sweddit change: Removed 10% dev cost
 		russian_administrative_rule = {
 			max = 100
 			min = 0

@@ -1,0 +1,32 @@
+namespace = sweddit_reroll
+
+country_event = {
+	id = sweddit_reroll.1
+	title = none
+	desc = none
+	picture = none
+
+	hidden = yes
+	trigger = {
+		ai = yes
+		NOT = {
+			has_country_flag = sweddit_reroll_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = sweddit_reroll_flag
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = -1
+		}
+	}
+}

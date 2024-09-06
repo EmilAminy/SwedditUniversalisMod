@@ -1689,7 +1689,7 @@ influence_ideas = {
 }
 
 naval_ideas = {
-	category = MIL
+	category = DIP
 
 	trigger = {
 		primitives = no

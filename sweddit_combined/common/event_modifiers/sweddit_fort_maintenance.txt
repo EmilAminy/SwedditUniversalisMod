@@ -1,0 +1,55 @@
+fort_cost_1 = {
+    fort_maintenance_modifier = 0.1
+}
+
+fort_cost_2 = {
+    fort_maintenance_modifier = 0.2
+}
+
+fort_cost_3 = {
+    fort_maintenance_modifier = 0.4
+}
+
+fort_cost_4 = {
+    fort_maintenance_modifier = 0.7
+}
+
+fort_cost_5 = {
+    fort_maintenance_modifier = 1.1
+}
+
+fort_cost_6 = {
+    fort_maintenance_modifier = 1.6
+}
+
+fort_cost_7 = {
+    fort_maintenance_modifier = 2.2
+}
+
+fort_cost_8 = {
+    fort_maintenance_modifier = 2.9
+}
+
+fort_cost_9 = {
+    fort_maintenance_modifier = 3.8
+}
+
+fort_cost_10 = {
+    fort_maintenance_modifier = 4.8
+}
+
+fort_cost_11 = {
+    fort_maintenance_modifier = 5.9
+}
+
+fort_cost_12 = {
+    fort_maintenance_modifier = 7.1
+}
+
+fort_cost_13 = {
+    fort_maintenance_modifier = 8.4
+}
+
+fort_cost_14 = {
+    fort_maintenance_modifier = 9.8
+}

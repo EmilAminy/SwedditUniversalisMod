@@ -1,0 +1,95 @@
+cav_cost_5 = {
+    cavalry_cost = 0.025
+}
+
+cav_cost_10 = {
+    cavalry_cost = 0.05
+}
+
+cav_cost_15 = {
+    cavalry_cost = 0.075
+}
+
+cav_cost_20 = {
+    cavalry_cost = 0.1
+}
+
+cav_cost_25 = {
+    cavalry_cost = 0.125
+}
+
+cav_cost_30 = {
+    cavalry_cost = 0.15
+}
+
+cav_cost_35 = {
+    cavalry_cost = 0.175
+}
+
+cav_cost_40 = {
+    cavalry_cost = 0.2
+}
+
+cav_cost_45 = {
+    cavalry_cost = 0.225
+}
+
+cav_cost_50 = {
+    cavalry_cost = 0.25
+}
+
+cav_cost_55 = {
+    cavalry_cost = 0.275
+}
+
+cav_cost_60 = {
+    cavalry_cost = 0.3
+}
+
+cav_cost_65 = {
+    cavalry_cost = 0.325
+}
+
+cav_cost_70 = {
+    cavalry_cost = 0.35
+}
+
+cav_cost_75 = {
+    cavalry_cost = 0.375
+}
+
+cav_cost_80 = {
+    cavalry_cost = 0.4
+}
+
+cav_cost_85 = {
+    cavalry_cost = 0.425
+}
+
+cav_cost_90 = {
+    cavalry_cost = 0.45
+}
+
+cav_cost_95 = {
+    cavalry_cost = 0.475
+}
+
+cav_cost_100 = {
+    cavalry_cost = 0.5
+}
+
+cav_cost_105 = {
+    cavalry_cost = 0.525
+}
+
+cav_cost_110 = {
+    cavalry_cost = 0.55
+}
+
+cav_cost_115 = {
+    cavalry_cost = 0.575
+}
+
+cav_cost_120 = {
+    cavalry_cost = 0.6
+}

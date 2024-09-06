@@ -341,4 +341,4 @@ on_mil_tech_taken = {
 			duration = -1
 		}
 	}
-} 
+}
