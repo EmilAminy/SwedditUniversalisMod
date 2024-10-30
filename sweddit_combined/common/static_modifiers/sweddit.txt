@@ -1,25 +1,7 @@
-# Faster government reform progress gain when at 100% horde unity
-horde_unity = {
-	global_unrest = -4
-	discipline = 0.10
-	reform_progress_growth = 2.0 # For some reason this is halved
-}
-
-# No development cost penalty for being a vassal
-vassal_nation = {
-}
-
 # Full core gives dev cost reduction
 core = {
 	local_tax_modifier = 0.75				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_development_cost = -0.1
-}
-
-mercantilism = {
-	global_prov_trade_power_modifier = 2.0
-	burghers_loyalty_modifier = 0.1
-	vaisyas_loyalty_modifier = 0.1
-	embargo_efficiency = 0.75
 }

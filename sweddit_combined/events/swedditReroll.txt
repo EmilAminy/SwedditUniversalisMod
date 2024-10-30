@@ -30,3 +30,32 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = sweddit_reroll.2
+	title = none
+	desc = none
+	picture = none
+
+	hidden = yes
+	trigger = {
+		ai = no
+		has_country_flag = sweddit_reroll_flag
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = sweddit_reroll_flag
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = -1
+		}
+	}
+}

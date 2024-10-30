@@ -1,7 +1,0 @@
-sweddit_reichskrieg_target = {}
-
-hire_privateers = {
-	embargo_efficiency = 0.75
-	privateer_efficiency = 0.25
-	improve_relation_modifier = -0.10
-}

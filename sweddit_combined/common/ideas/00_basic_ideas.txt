@@ -1689,6 +1689,7 @@ influence_ideas = {
 }
 
 naval_ideas = {
+	# Sweddit change: Moved category from military to diplomatic
 	category = DIP
 
 	trigger = {

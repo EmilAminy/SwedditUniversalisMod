@@ -1,0 +1,3 @@
+sweddit_reroll_ideas = {
+    idea_cost = -2
+}

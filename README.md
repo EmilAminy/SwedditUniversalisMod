@@ -21,38 +21,28 @@
 
 #### Decisions
 - Countries that have **at any point** been the **Timurid** tag may no longer form **Persia**
-
-#### Estate privileges
-- Amount of **discipline** gained from **Qizilbash estate** privilege **Regimental Discipline** reduced from **5%** to **2.5%**
-- **Prime Herding Rights** privilege removed from **Cossack estate**
+- Disabled the **Establish American Frontiers** decision for the **Aztecs**
+- Added a decision that permits player who join on formerly AI nations to reroll their ideas cheaply
 
 #### Defender of Faith
 - Made **DoF** available to all religions
 - Reversed the levels of **DoF**, fewer followers of religion = stronger **DoF**
 
-#### Disasters
-- Crisis of the Ming Dynasty can trigger in age of exploration
-
-#### Events
-- Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
-
 #### Forts
-- Forts maintenance starts becoming more expensive if you exceed 1 fort per 50 development
+- **Fort maintenance** starts becoming more expensive if you exceed 1 fort per 50 development
+- **Fort garrison damage** increases with each **military technology level**
 
 #### Government reforms
 - Parliament issues **Draft** and **Emergency impressment act** removed
 - **Mercenary mobilization** nerfed to give **5% mercenary discipline** and **15% mercenary manpower**
 - **Russian Empire** no longer gives **-10% development cost**
+- **Autonomous Swiss Cantons** and **Expanded Black Army** now only give **+25% mercenary manpower**
 
 #### Ideas
 - **Maritime ideas** changed, replaced **Ship repair in coastal sea zone** with **+1 admiral maneuver**
 - **Mercenary ideas** nerfed to only give **-15% mercenary maintenance** and **20% mercenary manpower**
-
-#### Imperial reforms
-- **Reichskrieg** vanilla behaviour has been disabled, it now functions similarly to **crusades**
-
-#### Land warfare modifiers
-- Assault fort now costs **50 military points** instead of **5 military points**
+- **Naval ideas** changed to a **diplomatic** idea group
+- All **national ideas** that give more than **+25% mercenary manpower** have been reduced to only **+25% mercenary manpower**
 
 #### Mandate of Heavean
 - **Loans** no longer cause **loss of mandate**
@@ -60,6 +50,12 @@
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
+
+#### Navy
+- Base **naval engagement width** has been set to **600**
+- **Naval disengagement chance** has been set to **0%**
+- **Ship capture chance** has been dramatically reduced
+- **Naval morale loss** from a **ship sinking** has been set to **0**
 
 #### Rivals
 - Diplo cost and cooldown of **changing rivals** removed
@@ -70,15 +66,9 @@
 #### State Edicts:
 - Removed **development edict**, instead all full cores give **-10% dev cost**
 
-#### Static Modifierss
-- **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
-
 ####  Triggered Modifiers
 - All countries get **-100% envoy travel time**
-- A **protestant or reformed** HRE will give the **reformed empire modifier** to **protestant, reformed or anglican** nations
-
-#### Vassals:
-- Vassals no longer get **+50% development cost**
+- All countries get **-5% mercenary discipline**
 
 #### War Score
 - Increase **war score** gained from **fulfill war goal** to **35%**

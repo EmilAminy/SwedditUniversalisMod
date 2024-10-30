@@ -49,6 +49,15 @@ country_decisions = {
 					region = central_america_region
 					region = mexico_region
 				}
+							}
+		}
+		provinces_to_highlight = {
+            OR = {
+                AND = {
+                    province_id = 852
+                    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+                }
+                owned_by = AZT 
 			}
 		}
 		allow = {

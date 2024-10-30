@@ -29,26 +29,6 @@ naval_nerf = {
 	}
 	
 	capture_ship_chance = -10
+	disengagement_chance = -10
 	sunk_ship_morale_hit_recieved = -1
-}
-
-sweddit_reichskrieger = {
-	potential = {
-		hre_reform_passed = emperor_reichskrieg
-	}
-
-	trigger = {
-		is_part_of_hre = yes
-		any_country = {
-			war_with = ROOT
-			has_country_modifier = sweddit_reichskrieg_target
-		}
-	}
-
-	global_manpower_modifier = 0.3
-	global_tax_modifier = 0.1
-	land_morale = 0.10
-	prestige = 1
-	mercenary_discipline = 0.05
-	global_unrest = -1
 }

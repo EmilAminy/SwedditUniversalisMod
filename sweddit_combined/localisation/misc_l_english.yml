@@ -1,28 +1,13 @@
 ﻿l_english:
-# Age bonus change
  ab_no_distance_for_core:0 "100% more supply limit"
-# No diplomat travel time
  teleporting_diplomats:0 "Teleports behind you"
  desc_teleporting_diplomats:0 "Heh, nothing personnel kid"
-# Merc nef
  merc_nerf:0 "Sad mercenary noises"
  desc_merc_nerf:0 "Why even bother man..."
-# Boat nerf
  naval_nerf:0 "No fun allowed"
  desc_naval_nerf:0 "WAAAH, BOAT MAN SCARY"
-# Australia trade company
  TRADE_COMPANY_AUSTRALIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Australian Company"
  TRADE_COMPANY_AUSTRALIA_Oceania_Trade_Company:0 "Australian Company"
  trade_company_australia:0 "Australian Charter"
-# Reroll ideas decision
  sweddit_reroll_decision_title: "Reroll ideas, one time use"
- sweddit_reroll_decision_desc: "Refunds all monarch points for all your completed idea groups"
-# Reichskrieg CB
- sweddit_reichskrieger:0 "Reichskrieg"
- sweddit_reichskrieg_target:0 "Reichskrieg Target"
- sweddit_reichkriegs_crusade:0 "Reichskrieg"
- sweddit_reichkriegs_crusade_desc:0 "They are the enemy of the Empire"
- sweddit_reichskrieg_action:0 "Call for Reichskrieg"
- sweddit_reichskrieg_action_title:0 "Call for Reichskrieg"
- sweddit_reichskrieg_action_desc:1 "They are the enemy of the Empire, should the Emperor call for Reichskrieg?"
- sweddit_reichskrieg_action_tooltip:0 "They are the enemy of the Empire. We, as the Emperor, can call for Reichskrieg"
+ sweddit_reroll_decision_desc: "Gives you a idea cost modifier for 6 months"
