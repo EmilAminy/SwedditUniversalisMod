@@ -191,6 +191,7 @@ russian_rule_mechanic = {
 				}
 			}
 		}
+		# Sweddit change: Removed 15% ICA
 		mobilize_new_order_regiments = {
 			icon = GFX_russian_rule_mil_button
 			cost_type = russian_military_rule
@@ -223,16 +224,6 @@ russian_rule_mechanic = {
 					}
 				}
 				add_yearly_manpower = 0.75
-				if = {
-					limit = {
-						has_government_attribute = new_order_regiment_buff
-					}
-					add_country_modifier = {
-						name = new_order_regiment_mobilized_modifier
-						duration = 3650
-					}
-					custom_tooltip = MILITARY_DOCTRINES_AND_ORGANIZATION_LOCK_TT
-				}
 			}
 			cooldown_years = 0
 			ai_chance = {

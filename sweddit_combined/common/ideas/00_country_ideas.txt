@@ -1739,8 +1739,9 @@ POL_ideas = {
 		global_manpower_modifier = 0.25
 		infantry_power = 0.1
 	}
+	# Sweddit change: Nerfed by -15% CCA
 	winged_hussars = {
-		cavalry_power = 0.3
+		cavalry_power = 0.15
 		can_recruit_hussars = yes
 	}
 	wojsko_komputoe = {

@@ -29,6 +29,4 @@ naval_nerf = {
 	}
 	
 	capture_ship_chance = -10
-	disengagement_chance = -10
-	sunk_ship_morale_hit_recieved = -1
 }
