@@ -147,6 +147,7 @@ update_ratings = {
 			limit = {
 				NOT = {
 					is_subject_of_type = tributary_state
+					is_subject_of_type = trade_protectorate
 				}
 			}
 			export_to_variable = {
