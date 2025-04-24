@@ -13,9 +13,6 @@
 #### Alliances
 - Removed opinion requirement for forming alliance
 
-#### Buildings
-- All buildings have been rebalanced
-
 #### Cavalry
 - **Cavalry cost modifiers** beyond **-30%** are are **halved**
 

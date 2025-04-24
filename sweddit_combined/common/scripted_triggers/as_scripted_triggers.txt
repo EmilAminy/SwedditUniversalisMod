@@ -42,7 +42,10 @@ is_player_with_player_tributary = {
     $who$ = {
         is_player = yes
         is_subject_of = PREV
-        is_subject_of_type = tributary_state
+        OR = {
+            is_subject_of_type = tributary_state
+            is_subject_of_type = trade_protectorate
+        }
     }
 }
 
