@@ -4,8 +4,6 @@
  desc_teleporting_diplomats:0 "Heh, nothing personnel kid"
  merc_nerf:0 "Sad mercenary noises"
  desc_merc_nerf:0 "Why even bother man..."
- naval_nerf:0 "No fun allowed"
- desc_naval_nerf:0 "WAAAH, BOAT MAN SCARY"
  TRADE_COMPANY_AUSTRALIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Australian Company"
  TRADE_COMPANY_AUSTRALIA_Oceania_Trade_Company:0 "Australian Company"
  trade_company_australia:0 "Australian Charter"

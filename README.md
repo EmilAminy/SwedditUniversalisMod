@@ -33,7 +33,6 @@
 
 #### Forts
 - **Fort maintenance** starts becoming more expensive if you exceed 1 fort per 50 development
-- **Fort garrison damage** increases with each **military technology level**
 
 #### Government reforms
 - Parliament issues **Draft** and **Emergency Impressment Act** removed
@@ -43,6 +42,7 @@
 - **Autonomous Swiss Cantons** and **Expanded Black Army** now only give **+25% mercenary manpower**
 
 #### Ideas
+- At most **40%** of selected idea groups can come from the same mana-category
 - **Maritime ideas** changed, replaced **Ship repair in coastal sea zone** with **+1 admiral maneuver**
 - **Mercenary ideas** nerfed to only give **-15% mercenary maintenance** and **20% mercenary manpower**
 - **Naval ideas** changed to a **diplomatic** idea group
@@ -58,9 +58,6 @@
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
-
-#### Navy
-- **Ship capture chance** has been dramatically reduced
 
 #### Rivals
 - Diplo cost and cooldown of **changing rivals** removed
